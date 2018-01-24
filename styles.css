@@ -386,192 +386,196 @@ footer p a:hover { color:#333; border-bottom-color: #333; }
 
 /** components **/
 
-.button-primary{
+.button{
+	padding: 8.5px 15px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin: 15px 5px;
+	user-select: none;
+}
+
+.button:hover{
+	box-shadow: 0px 0px 3px #888888;
+}
+
+.button:active{
+	box-shadow: inset 0px 1px 2px #373737;
+}
+
+.button i{
+	margin-right: 5px;
+}
+
+.primary-button{
 	background-color: #0074B8;
 	color: #ffffff;
 	font-weight: bold;
-	border-radius: 5px;
-	margin: 15px 5px;
-	user-select: none;
-	cursor: pointer;
-}
-.button-primary:hover{
-	box-shadow: 0px 0px 4px #373737;
-	color: #ffffff;
-
-}
-.button-primary:active{
-	user-select: none;
-	box-shadow: inset 0px 1px 2px #373737;
-	color: #ffffff;
 }
 
-.button-neutral{
+.neutral-button{
 	background-color: #F5F5F7;
 	color: #373737;
 	border: 1px solid #D7DFE1;
-	border-radius: 5px;
-	padding: 6px 15px !important;
-	margin: 15px 5px;
-	user-select: none;
-	cursor: pointer;
-}
-.button-neutral:hover{
-	box-shadow: 0px 0px 4px #888888;
-	color: #373737;
-
-}
-.button-neutral:active{
-	user-select: none;
-	box-shadow: inset 0px 1px 2px #373737;
 }
 
-.button-destructive{
+.destructive-button{
 	background-color: #CC3300;
 	color: #ffffff;
-	border-radius: 5px;
-	margin: 15px 5px;
-	user-select: none;
-	cursor: pointer;
-}
-.button-destructive:hover{
-	box-shadow: 0px 0px 4px #888888;
-	color: #ffffff;
-
-}
-.button-destructive:active{
-	user-select: none;
-	box-shadow: inset 0px 1px 2px #373737;
-	color: #ffffff;
-}
-
-.button-primary-outline{
-	border: 1px solid #0074B8;
-	color: #0074B8;
-	background-color: #ffffff;
-	font-weight: bold;
-	border-radius: 5px;
-	margin: 15px 5px;
-	user-select: none;
-	cursor: pointer;
-}
-.button-primary-outline:hover{
-	box-shadow: 0px 0px 4px #888888;
-	background-color: #ffffff;
-	color: #0074B8;
-}
-.button-primary-outline:active{
-	user-select: none;
-	background-color: #ffffff;
-}
-
-.button-destructive-outline{
-	border: 1px solid #CC3300;
-	color: #CC3300;
-	border-radius: 5px;
-	margin: 15px 5px;
-	user-select: none;
-	cursor: pointer;
-}
-.button-destructive-outline:hover{
-	box-shadow: 0px 0px 4px #888888;
-	color: #CC3300;
-	background-color: #ffffff;
-}
-.button-destructive-outline:active{
-	user-select: none;
-	color: #CC3300;
-}
-
-.button-primary-small{
-	background-color: #0074B8;
-	color: #ffffff;
-	font-size: 11px !important;
-	padding: 3.5px 15px;
-	font-weight: bold;
-	border-radius: 5px;
-	margin: 15px 5px;
-	user-select: none;
-	cursor: pointer;
-}
-.button-primary-small:hover{
-	box-shadow: 0px 0px 4px #373737;
-	color: #ffffff;
-
-}
-.button-primary-small:active{
-	user-select: none;
-	box-shadow: inset 0px 1px 2px #373737;
-	color: #ffffff;
-}
-
-.button-neutral-small{
-	background-color: #F5F5F7;
-	color: #373737;
-	padding: 1px 15px;
-	border: 1px solid #D7DFE1;
-	border-radius: 5px;
-	margin: 15px 5px;
-	user-select: none;
-	cursor: pointer;
-}
-.button-neutral-small:hover{
-	box-shadow: 0px 0px 4px #888888;
-	color: #373737;
-
-}
-.button-neutral-small:active{
-	user-select: none;
-	box-shadow: inset 0px 1px 2px #373737;
-}
-
-.button-destructive-small{
-	background-color: #CC3300;
-	color: #ffffff;
-	padding: 2px 15px;
-	border-radius: 5px;
-	margin: 15px 5px;
-	user-select: none;
-	cursor: pointer;
-}
-.button-destructive-small:hover{
-	box-shadow: 0px 0px 4px #888888;
-	color: #ffffff;
-
-}
-.button-destructive-small:active{
-	user-select: none;
-	box-shadow: inset 0px 1px 2px #373737;
-	color: #ffffff;
-}
-
-.button-text{
-	font-size: 13px;
-	line-height: 12px;
-	padding: 7px 30px;
-}
-
-.button-text-outline{
-	font-size: 13px;
-	line-height: 12px;
-	padding: 6px 30px;
-}
-
-.small-button-text{
-	font-size: 13px;
-	line-height: 12px;
 }
 
 .button-link{
 	color: #0074B8;
 	font-size: 13px;
 	margin: 5px 15px;
+	user-select: none;
 }
 
 .button-link:hover{
 	color: #0074B8;
 	text-decoration: underline;
 	cursor: pointer;
+}
+
+.icon-button{
+	margin: 15px 5px;
+	color: #373737;
+	cursor: pointer;
+	font-size: 13px;
+	user-select: none;
+}
+
+.button-small{
+	padding: 3.5px 15px;
+	margin: 15px 5px;
+	border-radius: 5px;
+	cursor: pointer;
+	user-select: none;
+}
+
+.button-small:hover{
+	box-shadow: 0px 0px 3px #888888;
+}
+
+.button-small:active{
+	box-shadow: inset 0px 1px 2px #373737;
+}
+
+.primary-button-small{
+	font-size: 11px;
+}
+
+.button-outline{
+	border-radius: 5px;
+	padding: 7.5px 15px;
+	background-color: #ffffff;
+	cursor: pointer;
+	margin: 15px 5px;
+	user-select: none;
+}
+
+.button-outline i{
+	margin-right: 5px;
+}
+
+.button-outline:hover{
+	box-shadow: 0px 0px 3px #888888;
+}
+
+.primary-button-outline{
+	border: 1px solid #0074B8;
+	color: #0074B8;
+	font-weight: bold;
+}
+
+.destructive-button-outline{
+	border: 1px solid #CC3300;
+	color: #CC3300;
+}
+
+.dropdown-button {
+    position: relative;
+		display: initial;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+		border: 1px solid #75A7C8;
+		border-radius: 5px;
+    min-width: 200px;
+    z-index: 99;
+}
+
+.dropdown-content a {
+    color: #373737;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #E9F4FB
+}
+
+.dropdown-button:hover .dropdown-content {
+    display: block;
+		top: 23px;
+		left: 5px;
+}
+
+.container {
+    display: table;
+    position: relative;
+		font-size: 12px;
+    padding-left: 30px;
+		margin-bottom: 10px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #ffffff;
+		border: 1px solid #373737;
+    border-radius: 50%;
+}
+
+.container input:checked ~ .checkmark {
+    background-color: #0074B8;
+		border: 1px solid #0074B8;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+ 	top: 5px;
+	left: 5px;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background: white;
 }
 
 /** typography **/
