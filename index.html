@@ -36,6 +36,12 @@
 							<li><a href="#coloranchor">Color</a></li>
 							<li><a href="#typeanchor">Typography</a></li>
 							<li><a href="#buttonanchor">Buttons</a></li>
+							<li><a href="#inputanchor">Input</a></li>
+							<li><a href="#searchanchor">Search</a></li>
+							<li><a href="#tooltipanchor">Tooltips</a></li>
+							<li><a href="#cardanchor">Cards</a></li>
+							<li><a href="#modalanchor">Modals</a></li>
+							<li><a href="#paginationanchor">Pagination</a></li>
 	            </ul>
 				</nav>
 
@@ -281,47 +287,22 @@
 			<div style="margin: 40px 0px">
 				<span class="button primary-button">Primary</span>
 				<span class="button neutral-button">Neutral</span>
-				<span class="button-link">Link</span>
+				<span class="button-link">Link Button</span>
 				<span class="button destructive-button">Destructive</span>
 			</div>
 
-			<p><b>Primary buttons</b> are used for main actions. The rest of the actions will be triggered by <b>neutral buttons</b>. In case an action is linked to a specific  a <b>link button</b> will be displayed. Negative actions are represented by <b>destructive buttons</b>.</p>
+			<h4>These are the most important buttons troughout the application. This means that any variation will be based on these four main types.</h4>
+			<p>As its name implies, the <i>primary button</i> will be used for those actions that are consider the most important.<br />
+			All the actions that don't need to be highlighted are going to be represented by a <i>neutral button</i>.<br />
+			<i>Links</i> are inline text that can redirect the user to a different context from the one showing in the current UI.<br />
+			Everytime that a negative action is going to be done, a <i>destructive button</i> will be displayed to ensure that the user is sure to perform that action.</p>
 
 			<div class="measurements-box"><p style="padding-bottom: 20px;">
-			<span style="font-weight: 700;">Height:</span> 30px<br>
-			<span style="font-weight: 700;">Padding (Left & Right):</span> 15px<br>
-			<span style="font-weight: 700;">Margin:</span> 15px 5px</p></div>
-
-			<p>As more text is added to the button the width of the button increases, but all the numbers stay the same.</p>
-
-			<div style="margin-bottom: 80px;"></div>
-			<h3>Variations</h3>
-
-			<h4>Buttons with icons</h4>
-			<div style="margin: 40px 0px">
-				<span class="button primary-button"><i class="fa fa-star fa-fw" aria-hidden="true"></i>Button</span>
-				<span class="button neutral-button"><i class="fa fa-star fa-fw" aria-hidden="true"></i>Button</span>
-				<span class="button destructive-button"><i class="fa fa-star fa-fw" aria-hidden="true"></i>Button</span>
+				<span><b>Height:</b> 30px</span><br />
+				<span><b>Padding (Left & Right):</b> 15px</span><br />
+				<span><b>Margin:</b> 15px 5px</span><br />
+				<span><b>Border radius:</b> 5px</span><br />
 			</div>
-
-			<h4>Icon buttons</h4>
-			<div style="margin: 40px 0px">
-				<span class="icon-button"><i class="fa fa-star fa-fw" aria-hidden="true"></i></span>
-				<span class="icon-button"><i class="fa fa-paw fa-fw" aria-hidden="true"></i></span>
-				<span class="icon-button"><i class="fa fa-tree fa-fw" aria-hidden="true"></i></span>
-			</div>
-
-			<h4>Small Buttons</h4>
-			<div style="margin: 40px 0px">
-				<span class="button-small primary-button primary-button-small">Button</span>
-				<span class="button-small neutral-button">Button</span>
-				<span class="button-small destructive-button">Button</span>
-			</div>
-
-			<div class="measurements-box"><p style="padding-bottom: 20px;">
-			<span style="font-weight: 700;">Height:</span> 20px<br>
-			<span style="font-weight: 700;">Padding (Left & Right):</span> 15px<br>
-			<span style="font-weight: 700;">Margin:</span> 15px 5px</p></div>
 
 			<h4>Dropdown buttons</h4>
 			<div style="margin: 40px 0px">
@@ -334,21 +315,49 @@
 				  </div>
 				</div>
 				<div class="dropdown-button">
-				  <span class="button neutral-button">Dropdown<i class="fa fa-caret-down fa-fw" aria-hidden="true" style="margin-left: 5px; margin-right: 0px"></i></span>
+				  <span class="button neutral-button">With Icons<i class="fa fa-caret-down fa-fw" aria-hidden="true" style="margin-left: 5px; margin-right: 0px"></i></span>
 				  <div class="dropdown-content">
 				    <a href="#"><i class="fa fa-star fa-fw" aria-hidden="true" style="margin-right: 5px"></i>Option 1</a>
 				    <a href="#"><i class="fa fa-star fa-fw" aria-hidden="true" style="margin-right: 5px"></i>Option 2</a>
 				    <a href="#"><i class="fa fa-star fa-fw" aria-hidden="true" style="margin-right: 5px"></i>Option 3</a>
 				  </div>
 				</div>
+				<div class="dropdown-button">
+					<span class="button neutral-button">Multiselect<i class="fa fa-caret-down fa-fw" aria-hidden="true" style="margin-left: 5px; margin-right: 0px"></i></span>
+					<div class="dropdown-content">
+						<a href="#">
+							<label class="containerC" style="margin-bottom: 0px">One
+							  <input type="checkbox">
+							  <span class="checkmarkC"></span>
+							</label>
+						</a>
+						<a href="#">
+							<label class="containerC" style="margin-bottom: 0px">Two
+							  <input type="checkbox">
+							  <span class="checkmarkC"></span>
+							</label>
+						</a>
+						<a href="#">
+							<label class="containerC" style="margin-bottom: 0px">Three
+							  <input type="checkbox">
+							  <span class="checkmarkC"></span>
+							</label>
+						</a>
+					</div>
+				</div>
 			</div>
 
-			<h4>Outline Buttons</h4>
-			<div style="margin: 40px 0px">
-				<span class="button-outline primary-button-outline">Button</span>
-				<span class="button-outline primary-button-outline"><i class="fa fa-star fa-fw" aria-hidden="true"></i>Button</span>
-				<span class="button-outline destructive-button-outline">Button</span>
-				<span class="button-outline destructive-button-outline"><i class="fa fa-star fa-fw" aria-hidden="true"></i>Button</span>
+			<p>When there is more than one possible action to apply to the same context a <i>dropdown button</i> will group them.<br />
+				Make the label sufficiently representative of the actions the button contains.<br />
+				Either primary or neutral button can be used depending on the importance of the actions.</p>
+
+			<div class="measurements-box"><p style="padding-bottom: 20px;">
+				<span><b>Height:</b> 30px</span><br />
+				<span><b>Padding (Left & Right):</b> 15px</span><br />
+				<span><b>Margin:</b> 15px 5px</span><br />
+				<span><b>Border radius:</b> 5px</span><br />
+				<span><b>Icon:</b> caret-down</span><br />
+				<span><b>Margin left (Icon):</b> 5px</span><br />
 			</div>
 
 			<h4>Radio Buttons</h4>
@@ -361,16 +370,452 @@
 				  <input type="radio" name="radio">
 				  <span class="checkmark"></span>
 				</label>
+				<label class="container" style="color: #D7DFE1; pointer-events: none">Disabled
+				  <input type="radio" name="radio">
+				  <span class="checkmark" style="background-color: #D7DFE1;  border-color: #D7DFE1"></span>
+				</label>
+			</div>
+
+			<p><i>Radio buttons</i> are used when the user has to choose only one option from the given</p>
+
+			<div class="measurements-box"><p style="padding-bottom: 20px;">
+				<span><b>Width:</b> 15px</span><br />
+				<span><b>Height:</b> 15px</span><br />
+				<span><b>Color (Checked):</b> Interaction Blue (#0074B8)</span><br />
+				<span><b>Font size (Label):</b> 13px</span>
+			</div>
+
+			<h4>Checkbox Buttons</h4>
+			<div style="margin: 40px 0px">
+				<label class="containerC">One
+				  <input type="checkbox" checked="checked">
+				  <span class="checkmarkC"></span>
+				</label>
+				<label class="containerC">Two
+				  <input type="checkbox">
+				  <span class="checkmarkC"></span>
+				</label>
+				<label class="containerC" style="color: #D7DFE1; pointer-events: none">Disabled
+				  <input type="checkbox">
+				  <span class="checkmarkC" style="background-color: #D7DFE1; border-color: #D7DFE1"></span>
+				</label>
+			</div>
+
+			<p><i>Checkbox buttons</i> are used when the user can choose more than one option from the given.</p>
+
+			<div class="measurements-box"><p style="padding-bottom: 20px;">
+				<span><b>Width:</b> 15px</span><br />
+				<span><b>Height:</b> 15px</span><br />
+				<span><b>Border radius:</b> 5px</span><br />
+				<span><b>Color (Checked):</b> Interaction Blue (#0074B8)</span><br />
+				<span><b>Font size (Label):</b> 13px</span>
+			</div>
+
+			<h4>Switch Buttons</h4>
+			<div style="margin: 40px 0px">
+				<span class="switch-label">Label One</span>
+				<label class="switch">
+				  <input type="checkbox">
+				  <span class="slider round"></span>
+				</label><br /><br />
+				<span class="switch-label">Label Two</span>
+				<label class="switch">
+				  <input type="checkbox">
+				  <span class="slider round"></span>
+				</label><br /><br />
+				<span class="switch-label" style="color: #D7DFE1; pointer-events: none">Disabled</span>
+				<label class="switch" style="pointer-events: none">
+				  <input type="checkbox">
+				  <span class="slider round"  style="color: #D7DFE1;  border-color: #D7DFE1"></span>
+				</label>
+			</div>
+
+			<p><i>Switch buttons</i> are used to determine states (activated / deactivated).</p>
+
+			<div class="measurements-box"><p style="padding-bottom: 20px;">
+				<span><b>Width:</b> 35px</span><br />
+				<span><b>Height:</b> 15px</span><br />
+				<span><b>Color (Activated):</b> Interaction Blue (#0074B8)</span><br />
+				<span><b>Margin right (Label):</b> 10px</span>
+			</div>
+
+			<h4>Icon buttons</h4>
+			<div style="margin: 40px 0px">
+				<span class="icon-button tooltip"><i class="fa fa-star fa-fw" aria-hidden="true"></i><span class="tooltiptext">Star</span></span>
+				<span class="icon-button tooltip"><i class="fa fa-paw fa-fw" aria-hidden="true"></i><span class="tooltiptext">Paw</span></span>
+				<div class="dropdown-button">
+				  <span><i class="fa fa-tree fa-fw" aria-hidden="true" style="color: #373737"></i></span>
+				  <div class="dropdown-content-icon">
+				    <a href="#">Option 1</a>
+				    <a href="#">Option 2</a>
+				    <a href="#">Option 3</a>
+				  </div>
+				</div>
+				<span class="icon-button-disable"><i class="fa fa-rocket fa-fw" aria-hidden="true"></i></span>
+			</div>
+
+			<p><i>Icon buttons</i> are going to be used when they can represent clearly the action to which it refers.<br />
+			They will be always accompanied by tooltips for novice users. Also they can display more options (similar to dropdown buttons).</p>
+
+			<div class="measurements-box"><p style="padding-bottom: 20px;">
+				<span><b>Size:</b> 13px</span><br />
+				<span><b>Color:</b> Text (#373737)</span><br />
+				<span><b>Margin:</b> 5px</span>
+			</div>
+
+			<div style="margin-bottom: 80px;"></div>
+			<h3>Variations</h3>
+
+			<h4>Buttons with icons</h4>
+			<div style="margin: 40px 0px">
+				<span class="button primary-button"><i class="fa fa-star fa-fw" aria-hidden="true"></i>Button</span>
+				<span class="button neutral-button"><i class="fa fa-star fa-fw" aria-hidden="true"></i>Button</span>
+				<span class="button destructive-button"><i class="fa fa-star fa-fw" aria-hidden="true"></i>Button</span>
+			</div>
+
+			<p><i>Buttons with icons</i> are going to be used to emphasize the action it represents.</p>
+
+			<div class="measurements-box"><p style="padding-bottom: 20px;">
+				<span><b>Height:</b> 30px</span><br />
+				<span><b>Padding (Left & Right):</b> 15px</span><br />
+				<span><b>Margin:</b> 15px 5px</span><br />
+				<span><b>Border radius:</b> 5px</span><br />
+				<span><b>Margin right (Icon):</b> 5px</span>
+			</div>
+
+			<h4>Small Buttons</h4>
+			<div style="margin: 40px 0px">
+				<span class="button-small primary-button primary-button-small">Button</span>
+				<span class="button-small neutral-button">Button</span>
+				<span class="button-small destructive-button">Button</span>
+			</div>
+
+			<p><i>Small buttons</i> will be placed inside other components.<br />
+				Icon are not going to be used because of the lack of space.</p>
+
+			<div class="measurements-box"><p style="padding-bottom: 20px;">
+				<span><b>Height:</b> 20px</span><br />
+				<span><b>Padding (Left & Right):</b> 15px</span><br />
+				<span><b>Margin:</b> 15px 5px</span><br />
+				<span><b>Border radius:</b> 5px</span><br />
+			</div>
+
+			<h4>Outline Buttons</h4>
+			<div style="margin: 40px 0px">
+				<span class="button-outline primary-button-outline">Button</span>
+				<span class="button-outline primary-button-outline"><i class="fa fa-star fa-fw" aria-hidden="true"></i>Button</span>
+				<span class="button-outline destructive-button-outline">Button</span>
+				<span class="button-outline destructive-button-outline"><i class="fa fa-star fa-fw" aria-hidden="true"></i>Button</span>
+			</div>
+
+			<p><i>Outline buttons</i> are built only for corner cases. Icons are also allowed in this type of buttons.<br />
+				Note: neutral buttons will maintain the previously established style.<br />
+				Consult it with the design team .</p>
+
+			<div class="measurements-box"><p style="padding-bottom: 20px;">
+				<span><b>Height:</b> 30px</span><br />
+				<span><b>Padding (Left & Right):</b> 15px</span><br />
+				<span><b>Margin:</b> 15px 5px</span><br />
+				<span><b>Border radius:</b> 5px</span><br />
+			</div>
+
+			<h4>Small Outline Buttons</h4>
+			<div style="margin: 40px 0px">
+				<span class="button-outline-small primary-button-outline">Button</span>
+				<span class="button-outline-small destructive-button-outline">Button</span>
+			</div>
+
+			<p><i>Small outline buttons</i> are built only for corner cases. Icons are not allowed in this type of buttons.<br />
+				Note: neutral buttons will maintain the previously established style.<br />
+				Consult it with the design team .</p>
+
+			<div class="measurements-box"><p style="padding-bottom: 20px;">
+				<span><b>Height:</b> 20px</span><br />
+				<span><b>Padding (Left & Right):</b> 15px</span><br />
+				<span><b>Margin:</b> 15px 5px</span><br />
+				<span><b>Border radius:</b> 5px</span><br />
+			</div>
+
+			<div style="margin-bottom: 80px;"></div>
+			<h3>States</h3>
+
+			<div style="margin: 40px 0px">
+				<span class="button primary-button">Active</span>
+				<span class="button primary-button-disabled">Disable</span>
+				<span class="button primary-button"><i class="fa fa-spinner fa-spin fa-fw" aria-hidden="true"></i>Loading</span>
+				<span class="button neutral-button">Active</span>
+				<span class="button neutral-button-disabled">Disable</span>
+				<span class="button neutral-button"><i class="fa fa-spinner fa-spin fa-fw" aria-hidden="true"></i>Loading</span>
+				<span class="button-link">Active</span>
+				<span class="button-link-disabled">Disable</span>
+				<span class="button destructive-button">Active</span>
+				<span class="button destructive-button-disabled">Disable</span>
+				<span class="button destructive-button"><i class="fa fa-spinner fa-spin fa-fw" aria-hidden="true"></i>Loading</span>
+		</div>
+
+		<p>There are three posible states: active, disable and loading.<br />
+			<i>Active</i> is the default state of all the buttons.<br />
+			<i>Disable</i> shows that a button is unable.<br />
+			<i>Loading</i> is providing visual feedback.</p>
+
+		<div class="measurements-box"><p style="padding-bottom: 20px;">
+			<span><b>Height:</b> 30px</span><br />
+			<span><b>Padding (Left & Right):</b> 15px</span><br />
+			<span><b>Margin:</b> 15px 5px</span><br />
+			<span><b>Border radius:</b> 5px</span><br />
+			<span><b>Icon:</b> spinner</span><br />
+			<span><b>Margin right (Icon):</b> 5px</span>
+		</div>
+
+		<div style="margin-bottom: 80px;"></div>
+		<hr>
+		<div style="margin-bottom: 80px;"></div>
+
+		<h2><a id="inputanchor" style="text-decoration:none; color:#373737;">Inputs</a></h3>
+			<h3 style="opacity: 0.5">Inputs allow users to enter data.</h2>
+			<h3>Types</h3>
+
+			<h4>Text input</h4>
+			<div style="margin: 20px 0px">
+				<input type="text" placeholder="Lorem ipsum" style="width: 400px">
+			</div>
+
+			<p><i>Placeholders</i> are useful as they guide the user when completing inputs.</p>
+
+			<div class="measurements-box"><p style="padding-bottom: 20px;">
+				<span><b>Height:</b> 30px</span><br />
+				<span><b>Padding (Left & Right):</b> 10px</span><br />
+				<span><b>Margin:</b> 0px 5px 15px 5px</span><br />
+				<span><b>Min width:</b> 200px</span><br />
+				<span><b>Border radius:</b> 5px</span>
+			</div>
+
+			<h4>Number input</h4>
+			<div style="margin: 20px 0px; position: relative; z-index: 2">
+				<input type="text">
+				<i class="fa fa-sort fa-fw icon-inside-input" aria-hidden="true"></i>
 			</div>
 
 			<div class="measurements-box"><p style="padding-bottom: 20px;">
-			<span style="font-weight: 700;">Height:</span> 30px<br>
-			<span style="font-weight: 700;">Padding (Left & Right):</span> 15px<br>
-			<span style="font-weight: 700;">Margin:</span> 15px 5px</p></div>
+				<span><b>Height:</b> 30px</span><br />
+				<span><b>Padding (Left & Right):</b> 10px</span><br />
+				<span><b>Margin:</b> 0px 5px 15px 5px</span><br />
+				<span><b>Min width:</b> 200px</span><br />
+				<span><b>Border radius:</b> 5px</span><br />
+				<span><b>Icon:</b> sort</span>
+			</div>
 
-			<div style="margin-bottom: 80px;"></div>
+			<h4>Date input</h4>
+			<div style="margin: 20px 0px; position: relative; z-index: 2">
+				<input type="text" placeholder="dd/mm/yyyy">
+				<i class="fa fa-calendar fa-fw icon-inside-input" aria-hidden="true"></i>
+			</div>
 
-		</div>
+			<div class="measurements-box"><p style="padding-bottom: 20px;">
+				<span><b>Height:</b> 30px</span><br />
+				<span><b>Padding (Left & Right):</b> 10px</span><br />
+				<span><b>Margin:</b> 0px 5px 15px 5px</span><br />
+				<span><b>Min width:</b> 200px</span><br />
+				<span><b>Border radius:</b> 5px</span><br />
+				<span><b>Icon:</b> calendar</span>
+			</div>
+
+			<h4>Time input</h4>
+			<div style="margin: 20px 0px; position: relative; z-index: 2">
+				<input type="text" placeholder="--:--:--">
+				<i class="fa fa-clock-o fa-fw icon-inside-input" aria-hidden="true"></i>
+			</div>
+
+			<div class="measurements-box"><p style="padding-bottom: 20px;">
+				<span><b>Height:</b> 30px</span><br />
+				<span><b>Padding (Left & Right):</b> 10px</span><br />
+				<span><b>Margin:</b> 0px 5px 15px 5px</span><br />
+				<span><b>Min width:</b> 200px</span><br />
+				<span><b>Border radius:</b> 5px</span><br />
+				<span><b>Icon:</b> clock-o</span>
+			</div>
+
+			<h4>Password input</h4>
+			<div style="margin: 20px 0px; position: relative; z-index: 2">
+				<input type="password" style="width: 400px">
+				<i class="fa fa-eye fa-fw icon-inside-input" aria-hidden="true" style="left: 395px"></i>
+			</div>
+
+			<p>The eye icon allow the user to check if the password is correct by showing the caracters.</p>
+
+			<div class="measurements-box"><p style="padding-bottom: 20px;">
+				<span><b>Height:</b> 30px</span><br />
+				<span><b>Padding (Left & Right):</b> 10px</span><br />
+				<span><b>Margin:</b> 0px 5px 15px 5px</span><br />
+				<span><b>Min width:</b> 200px</span><br />
+				<span><b>Border radius:</b> 5px</span><br />
+				<span><b>Icon:</b> eye</span>
+			</div>
+
+			<div style="margin-bottom: 80px"></div>
+			<h3>Variations</h3>
+
+			<h4>Dropdown & Multiselect inputs</h4>
+			<span style="display: flex; flex-direction: row">
+				<div style="margin: 20px 5px; position: relative; z-index: 2">
+					<input type="text" placeholder="Dropdown">
+					<i class="fa fa-caret-down fa-fw icon-inside-input" aria-hidden="true"></i>
+				</div>
+				<div style="margin: 20px 5px; position: relative; z-index: 2">
+					<input type="text" placeholder="Dropdown with icons">
+					<i class="fa fa-caret-down fa-fw icon-inside-input" aria-hidden="true"></i>
+				</div>
+				<div style="margin: 20px 5px; position: relative; z-index: 2">
+					<input type="text" placeholder="Multiselect">
+					<i class="fa fa-caret-down fa-fw icon-inside-input" aria-hidden="true"></i>
+				</div>
+			</span>
+
+			<p>Both inputs work the same, the only difference is the amount of options that can be selected.</p>
+
+			<div class="measurements-box"><p style="padding-bottom: 20px;">
+				<span><b>Height:</b> 30px</span><br />
+				<span><b>Padding (Left & Right):</b> 10px</span><br />
+				<span><b>Margin:</b> 0px 5px 15px 5px</span><br />
+				<span><b>Min width:</b> 200px</span><br />
+				<span><b>Border radius:</b> 5px</span><br />
+				<span><b>Icon:</b> caret-down</span>
+			</div>
+
+			<h4>Textarea input</h4>
+				<div style="margin: 20px 5px; position: relative; z-index: 2">
+					<textarea style="width: 400px; height: 100px"></textarea>
+				</div>
+
+			<p><i>Textareas</i> are only used for more than one line of text.</p>
+
+			<div class="measurements-box"><p style="padding-bottom: 20px;">
+				<span><b>Height:</b> 30px</span><br />
+				<span><b>Padding (Left & Right):</b> 10px</span><br />
+				<span><b>Margin:</b> 0px 5px 15px 5px</span><br />
+				<span><b>Min width:</b> 200px</span><br />
+				<span><b>Border radius:</b> 5px</span><br />
+				<span><b>Icon:</b> caret-down</span>
+			</div>
+
+			<h4>Attachments</h4>
+			<div style="margin: 20px 0px">
+				<div class="attachment-container">
+					<span style="text-align: center">
+						<p>Drag & Drop files here or</p>
+						<span class="button-outline primary-button-outline">Choose files</span>
+					</span>
+				</div>
+			</div>
+
+			<p>They may not look like an input but <i>attachments</i> are a way to eneter data too.<br />
+			Note that a primary outline button is used in this component.</p>
+
+			<div class="measurements-box"><p style="padding-bottom: 20px">
+				<span><b>Width:</b> 400px</span><br />
+				<span><b>Height:</b> 100px</span><br />
+				<span><b>Margin:</b> 10px</span><br />
+				<span><b>Border radius:</b> 5px</span>
+			</div>
+
+			<div style="margin-bottom: 80px"></div>
+			<h3>Combinations</h3>
+
+			<h4>Input + Button</h4>
+			<div style="margin: 20px 0px; position: relative">
+				<input type="text" placeholder="Lorem ipsum" style="width: 268px">
+				<span class="button primary-button" style="margin-left: 0px; position: absolute; left: 220px; top: -14px; border-radius: 0px 5px 5px 0px">Button</span>
+			</div>
+
+			<p>Note that left border radius of the button is 0px.</p>
+
+			<div class="measurements-box"><p style="padding-bottom: 20px">
+				<span><b>Width:</b> depending on the button size.</span><br />
+				<span><b>Height:</b> 30px</span><br />
+				<span><b>Margin:</b> 15px 5px</span><br />
+				<span><b>Border radius:</b> 5px</span>
+			</div>
+
+			<h4>Input + Icon (after)</h4>
+			<div style="margin: 20px 0px; position: relative">
+				<input type="text" placeholder="Lorem ipsum" style="margin-right: 10px">
+				<i class="fa fa-star fa-fw" aria-hidden="true"></i>
+			</div>
+
+			<p>There are some cases in which an icon button can work better than a primary button.</p>
+
+			<div class="measurements-box"><p style="padding-bottom: 20px">
+				<span><b>Min width (Input):</b> 200px</span><br />
+				<span><b>Margin right (Input):</b> 10px</span><br />
+				<span><b>Border radius:</b> 5px</span>
+			</div>
+
+			<h4>Ranges (Date & Time)</h4>
+			<span style="display: flex; flex-direction: row">
+				<div style="margin: 20px 0px; position: relative; z-index: 2; margin-right: 10px">
+					<input type="text" placeholder="From" style="width: 195px">
+					<i class="fa fa-calendar fa-fw icon-inside-input" aria-hidden="true"></i>
+				</div>
+				<div style="margin: 20px 0px; position: relative; z-index: 2">
+					<input type="text" placeholder="To" style="width: 195px">
+					<i class="fa fa-calendar fa-fw icon-inside-input" aria-hidden="true"></i>
+				</div>
+			</span>
+			<span style="display: flex; flex-direction: row">
+				<div style="margin: 20px 0px; position: relative; z-index: 2; margin-right: 10px">
+					<input type="text" placeholder="From" style="width: 195px">
+					<i class="fa fa-clock-o fa-fw icon-inside-input" aria-hidden="true"></i>
+				</div>
+				<div style="margin: 20px 0px; position: relative; z-index: 2">
+					<input type="text" placeholder="To" style="width: 195px">
+					<i class="fa fa-clock-o fa-fw icon-inside-input" aria-hidden="true"></i>
+				</div>
+			</span>
+
+			<div class="measurements-box"><p style="padding-bottom: 20px">
+				<span><b>Min width (Input):</b> 195px</span><br />
+				<span><b>Margin (between inputs):</b> 10px</span><br />
+				<span><b>Border radius:</b> 5px</span>
+			</div>
+
+			<h4>Label + Input</h4>
+			<div style="margin: 20px 0px; position: relative; z-index: 2; margin-right: 10px">
+				<label>Label</label><br />
+				<input type="text" style="margin-top: 5px">
+			</div>
+
+			<div class="measurements-box"><p style="padding-bottom: 20px">
+				<span><b>Font size (label):</b> 13px</span><br />
+				<span><b>Font weight (label):</b> bold</span><br />
+				<span><b>Margin bottom (label):</b> 5px</span><br />
+				<span><b>Border radius (input):</b> 5px</span>
+			</div>
+
+			<div style="margin-bottom: 80px"></div>
+			<h3>States</h3>
+
+			<span style="display: flex; flex-direction: rox">
+				<div style="margin: 20px 10px 20px 0px">
+					<label>Label</label><span class="required-input"> - Required</span><br />
+					<input type="text" style="margin-top: 5px">
+				</div>
+				<div style="margin: 20px 0px">
+					<label>Label</label><span class="optional-input"> - Optional</span><br />
+					<input type="text" style="margin-top: 5px">
+				</div>
+			</span>
+
+			<div class="measurements-box"><p style="padding-bottom: 20px">
+				<span><b>Font size (label):</b> 13px</span><br />
+				<span><b>Font weight (label):</b> bold</span><br />
+				<span><b>Margin bottom (label):</b> 5px</span><br />
+				<span><b>Border radius (input):</b> 5px</span>
+			</div>
+
+
+
+
+
 
 			<footer class="clear">
 				<p>&copy; 2017 Fergus Design Team.</p>
