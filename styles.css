@@ -483,7 +483,7 @@ footer p a:hover { color:#333; border-bottom-color: #333; }
 	cursor: pointer;
 	font-size: 13px;
 	user-select: none;
-	pointer-events: none
+	pointer-events: none;
 }
 
 .button-small{
@@ -789,25 +789,61 @@ input:checked + .slider:before {
 	text-align: center;
 }
 
-.tooltip {
+.ltooltip {
     position: relative;
     display: inline-block;
 }
 
-.tooltip .tooltiptext {
+.ltooltip .tooltiptext {
+		visibility: hidden;
+		width: 120px;
+		background-color: #373737;
+		color: #fff;
+		text-align: center;
+		border-radius: 6px;
+		padding: 15px 10px;
+		position: absolute;
+		z-index: 1;
+		top: -15px;
+		right: 110%;
+		margin-right: 5px;
+}
+
+.ltooltip .tooltiptext::after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 100%;
+		margin-top: -5px;
+		border-width: 5px;
+		border-style: solid;
+		border-color: transparent transparent transparent #373737;
+}
+.ltooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.ttooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.ttooltip .tooltiptext {
     visibility: hidden;
+    width: 120px;
     background-color: #373737;
     color: #fff;
     text-align: center;
     border-radius: 6px;
-    padding: 5px 15px;
+    padding: 15px 10px;
     position: absolute;
     z-index: 1;
     bottom: 150%;
-    margin-left: -35px;
+    left: 50%;
+    margin-left: -75px;
 }
 
-.tooltip .tooltiptext::after {
+.ttooltip .tooltiptext::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -818,7 +854,76 @@ input:checked + .slider:before {
     border-color: #373737 transparent transparent transparent;
 }
 
-.tooltip:hover .tooltiptext {
+.ttooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.btooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.btooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #373737;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 15px 10px;
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+    left: 30%;
+    margin-left: -70px;
+}
+
+.btooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #373737 transparent;
+}
+
+.btooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.rtooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.rtooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #373737;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 15px 10px;
+    position: absolute;
+    z-index: 1;
+    top: -15px;
+    left: 110%;
+		margin-left: 5px;
+}
+
+.rtooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #373737 transparent transparent;
+}
+.rtooltip:hover .tooltiptext {
     visibility: visible;
 }
 
@@ -879,6 +984,17 @@ label{
 .optional-input{
 	color: #92B2C3;
 	font-size: 11px;
+}
+
+.help-input{
+	font-size: 11px;
+	margin-left: 5px;
+}
+
+.validation-wrong-input{
+	font-size: 11px;
+	margin-left: 5px;
+	color: #CC3300;
 }
 
 

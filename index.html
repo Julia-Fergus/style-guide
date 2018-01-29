@@ -42,6 +42,7 @@
 							<li><a href="#cardanchor">Cards</a></li>
 							<li><a href="#modalanchor">Modals</a></li>
 							<li><a href="#paginationanchor">Pagination</a></li>
+							<li><a href="#messajesanchor">Messages</a></li>
 	            </ul>
 				</nav>
 
@@ -441,8 +442,12 @@
 
 			<h4>Icon buttons</h4>
 			<div style="margin: 40px 0px">
-				<span class="icon-button tooltip"><i class="fa fa-star fa-fw" aria-hidden="true"></i><span class="tooltiptext">Star</span></span>
-				<span class="icon-button tooltip"><i class="fa fa-paw fa-fw" aria-hidden="true"></i><span class="tooltiptext">Paw</span></span>
+				<div class="ttooltip"><i class="fa fa-star fa-fw" aria-hidden="true" style="color: #373737; margin-right: 10px"></i>
+					<span class="tooltiptext">Tooltip text</span>
+				</div>
+				<div class="ttooltip"><i class="fa fa-paw fa-fw" aria-hidden="true" style="color: #373737; margin-right: 10px"></i>
+					<span class="tooltiptext">Tooltip text</span>
+				</div>
 				<div class="dropdown-button">
 				  <span><i class="fa fa-tree fa-fw" aria-hidden="true" style="color: #373737"></i></span>
 				  <div class="dropdown-content-icon">
@@ -637,8 +642,8 @@
 
 			<h4>Password input</h4>
 			<div style="margin: 20px 0px; position: relative; z-index: 2">
-				<input type="password" style="width: 400px">
-				<i class="fa fa-eye fa-fw icon-inside-input" aria-hidden="true" style="left: 395px"></i>
+				<input type="password">
+				<i class="fa fa-eye fa-fw icon-inside-input" aria-hidden="true"></i>
 			</div>
 
 			<p>The eye icon allow the user to check if the password is correct by showing the caracters.</p>
@@ -690,7 +695,8 @@
 			<p><i>Textareas</i> are only used for more than one line of text.</p>
 
 			<div class="measurements-box"><p style="padding-bottom: 20px;">
-				<span><b>Height:</b> 30px</span><br />
+				<span><b>Width:</b> 400px</span><br />
+				<span><b>Height:</b> 100px</span><br />
 				<span><b>Padding (Left & Right):</b> 10px</span><br />
 				<span><b>Margin:</b> 0px 5px 15px 5px</span><br />
 				<span><b>Min width:</b> 200px</span><br />
@@ -746,6 +752,7 @@
 
 			<div class="measurements-box"><p style="padding-bottom: 20px">
 				<span><b>Min width (Input):</b> 200px</span><br />
+				<span><b>Height (Input):</b> 30px</span><br />
 				<span><b>Margin right (Input):</b> 10px</span><br />
 				<span><b>Border radius:</b> 5px</span>
 			</div>
@@ -774,7 +781,8 @@
 
 			<div class="measurements-box"><p style="padding-bottom: 20px">
 				<span><b>Min width (Input):</b> 195px</span><br />
-				<span><b>Margin (between inputs):</b> 10px</span><br />
+				<span><b>Height (Input):</b> 30px</span><br />
+				<span><b>Margin (between Inputs):</b> 10px</span><br />
 				<span><b>Border radius:</b> 5px</span>
 			</div>
 
@@ -784,11 +792,14 @@
 				<input type="text" style="margin-top: 5px">
 			</div>
 
+			<p><i>Labels</i> are another way of guiding the user regarding the information that must be entered.</p>
+
 			<div class="measurements-box"><p style="padding-bottom: 20px">
-				<span><b>Font size (label):</b> 13px</span><br />
-				<span><b>Font weight (label):</b> bold</span><br />
-				<span><b>Margin bottom (label):</b> 5px</span><br />
-				<span><b>Border radius (input):</b> 5px</span>
+				<span><b>Font size (Label):</b> 13px</span><br />
+				<span><b>Font weight (Label):</b> bold</span><br />
+				<span><b>Margin bottom (Label):</b> 5px</span><br />
+				<span><b>Height (Input):</b> 30px</span><br />
+				<span><b>Border radius (Input):</b> 5px</span>
 			</div>
 
 			<div style="margin-bottom: 80px"></div>
@@ -796,21 +807,184 @@
 
 			<span style="display: flex; flex-direction: rox">
 				<div style="margin: 20px 10px 20px 0px">
+					<label>Label</label><br />
+					<input type="text" style="margin-top: 5px" placeholder="Active">
+				</div>
+				<div style="margin: 20px 10px 20px 0px">
 					<label>Label</label><span class="required-input"> - Required</span><br />
 					<input type="text" style="margin-top: 5px">
 				</div>
-				<div style="margin: 20px 0px">
+				<div style="margin: 20px 10px 20px 0px">
 					<label>Label</label><span class="optional-input"> - Optional</span><br />
 					<input type="text" style="margin-top: 5px">
 				</div>
+				<div style="margin: 20px 10px 20px 0px">
+					<label>Label</label><br />
+					<input type="text" style="margin-top: 5px; background-color: #F5F5F7; pointer-events: none" placeholder="Disable">
+				</div>
 			</span>
 
+			<p><i>Active</i> is the default state of all the input fields.<br />
+				<i>Required</i>, inputs that must be completed obligatorily.<br />
+				<i>Optional</i>, inputs that can be completed or not.<br />
+				<i>Disable</i> means that the input field is unable.</p>
+
 			<div class="measurements-box"><p style="padding-bottom: 20px">
-				<span><b>Font size (label):</b> 13px</span><br />
-				<span><b>Font weight (label):</b> bold</span><br />
-				<span><b>Margin bottom (label):</b> 5px</span><br />
-				<span><b>Border radius (input):</b> 5px</span>
+				<span><b>Font size (Label):</b> 13px</span><br />
+				<span><b>Font weight (Label):</b> bold</span><br />
+				<span><b>Margin bottom (Label):</b> 5px</span><br />
+				<span><b>Height (Input):</b> 30px</span><br />
+				<span><b>Border radius (Input):</b> 5px</span>
 			</div>
+
+			<div style="margin-bottom: 80px"></div>
+			<h3>Help & Validation Feedback</h3>
+
+			<h4>Help</h4>
+			<div style="margin: 20px 0px">
+				<input type="text" placeholder="Lorem ipsum" style="width: 400px">
+				<p class="help-input">Help goes here</p>
+			</div>
+
+			<p>It is important to communicate to the user all those details that are not completely intuitive.<br />
+				<i>Help</i> should be clear, concise and as short as possible.</p>
+
+			<div class="measurements-box"><p style="padding-bottom: 20px">
+				<span><b>Font size (Help):</b> 11px</span><br />
+				<span><b>Margin left (Help):</b> 5px</span><br />
+				<span><b>Height (Input):</b> 30px</span><br />
+				<span><b>Border radius (Input):</b> 5px</span>
+			</div>
+
+			<h4>Validation Feedback</h4>
+			<div style="margin: 20px 5px; position: relative; z-index: 2">
+				<input type="text" value="Correct" style="width: 400px">
+				<i class="fa fa-check-circle fa-fw icon-inside-input" aria-hidden="true" style="color: #88BF5A; left: 395px"></i>
+			</div>
+			<div style="margin: 20px 5px; position: relative; z-index: 2">
+				<input type="text" value="Incorrect" style="width: 400px; border-color: #CC3300">
+				<i class="fa fa-times-circle fa-fw icon-inside-input" aria-hidden="true" style="color: #CC3300; left: 395px"></i>
+				<p class="validation-wrong-input">Reason goes here</p>
+			</div>
+
+			<p><i>Validations</i> are another way to help the user know if the information he is entering is correct or incorrect.<br />
+				When the user enters incorrect information, it is necessary to clearly communicate what was wrong in a<br />
+				clear and friendly way.</p>
+
+			<div class="measurements-box"><p style="padding-bottom: 20px">
+				<span><b>Font size (Help):</b> 11px</span><br />
+				<span><b>Margin left (Help):</b> 5px</span><br />
+				<span><b>Height (Input):</b> 30px</span><br />
+				<span><b>Border radius (Input):</b> 5px<br />
+				<span><b>Icons:</b> check-circle & times-circle</span>
+			</div>
+
+			<div style="margin-bottom: 80px;"></div>
+			<hr>
+			<div style="margin-bottom: 80px;"></div>
+
+			<h2><a id="searchanchor" style="text-decoration:none; color:#373737;">Search</a></h3>
+				<h3 style="opacity: 0.5">Search allow users find specific data within a large amount of information.</h2>
+				<h3>Types</h3>
+
+				<h4>Search</h4>
+				<div style="margin: 20px 5px; position: relative; z-index: 2">
+					<input type="text" placeholder="Search" style="width: 200px">
+					<i class="fa fa-search fa-fw icon-inside-input" aria-hidden="true" style="left: 195px"></i>
+				</div>
+
+				<p><i>Search</i> input will help the user find specific data.</p>
+
+				<div class="measurements-box"><p style="padding-bottom: 20px">
+					<span><b>Width:</b> 200px</span><br />
+					<span><b>Height (Input):</b> 30px</span><br />
+					<span><b>Border radius (Input):</b> 5px<br />
+					<span><b>Icon:</b> search</span>
+				</div>
+
+				<h4>Filter</h4>
+				<div style="margin: 20px 5px; position: relative; z-index: 2">
+					<input type="text" placeholder="Filter" style="width: 200px">
+					<i class="fa fa-filter fa-fw icon-inside-input" aria-hidden="true" style="left: 195px"></i>
+				</div>
+
+				<p><i>Filter</i> input will help the user filter specific data within a given context.</p>
+
+				<div class="measurements-box"><p style="padding-bottom: 20px">
+					<span><b>Width:</b> 200px</span><br />
+					<span><b>Height (Input):</b> 30px</span><br />
+					<span><b>Border radius (Input):</b> 5px<br />
+					<span><b>Icon:</b> filter</span>
+				</div>
+
+				<h3>States</h3>
+
+				<span style="display: flex; flex-direction: row">
+					<div style="margin: 20px 5px; position: relative; z-index: 2">
+						<input type="text" placeholder="Active search" style="width: 200px">
+						<i class="fa fa-search fa-fw icon-inside-input" aria-hidden="true" style="left: 195px"></i>
+					</div>
+					<div style="margin: 20px 5px; position: relative; z-index: 2">
+						<input type="text" placeholder="Loading search" style="width: 200px">
+						<i class="fa fa-spinner fa-spin fa-fw icon-inside-input" aria-hidden="true" style="left: 195px"></i>
+					</div>
+					<div style="margin: 20px 5px; position: relative; z-index: 2">
+						<input type="text" placeholder="Active filter" style="width: 200px">
+						<i class="fa fa-filter fa-fw icon-inside-input" aria-hidden="true" style="left: 195px"></i>
+					</div>
+					<div style="margin: 20px 5px; position: relative; z-index: 2">
+						<input type="text" placeholder="Loading filter" style="width: 200px">
+						<i class="fa fa-spinner fa-spin fa-fw icon-inside-input" aria-hidden="true" style="left: 195px"></i>
+					</div>
+				</span>
+
+				<p><i>Active</i> is the default state for search or filter inputs.<br/>
+					It is always important to provide feedback to the user. <i>Loading</i> will help the user know<br />
+					that the search/filter action is being processed.<br />
+					Note that there are no disabled states in search/filter inputs.</p>
+
+				<div class="measurements-box"><p style="padding-bottom: 20px">
+					<span><b>Width:</b> 200px</span><br />
+					<span><b>Height (Input):</b> 30px</span><br />
+					<span><b>Border radius (Input):</b> 5px<br />
+					<span><b>Icon:</b> search</span>
+				</div>
+
+				<div style="margin-bottom: 80px;"></div>
+				<hr>
+				<div style="margin-bottom: 80px;"></div>
+
+				<h2><a id="tooltipanchor" style="text-decoration:none; color:#373737">Tooltips</a></h3>
+					<h3 style="opacity: 0.5">Tooltips help users understand unknown or unfamiliar objects in the UI.</h2>
+
+						<div class="ltooltip"><i class="fa fa-info-circle fa-fw" aria-hidden="true" style="color: #373737; margin-right: 10px"></i>
+						  <span class="tooltiptext">Tooltip text</span>
+						</div>
+						<div class="ttooltip"><i class="fa fa-info-circle fa-fw" aria-hidden="true" style="color: #373737; margin-right: 10px"></i>
+						  <span class="tooltiptext">Tooltip text</span>
+						</div>
+						<div class="btooltip"><i class="fa fa-info-circle fa-fw" aria-hidden="true" style="color: #373737; margin-right: 10px"></i>
+						  <span class="tooltiptext">Tooltip text</span>
+						</div>
+						<div class="rtooltip"><i class="fa fa-info-circle fa-fw" aria-hidden="true" style="color: #373737"></i>
+						  <span class="tooltiptext">Tooltip text</span>
+						</div>
+
+						<p style="margin-top: 20px"><i>Tooltips</i> can be placed on the left, top, bottom or right depending on the context.</p>
+
+						<div class="measurements-box"><p style="padding-bottom: 20px">
+							<span><b>Width:</b> 120px</span><br />
+							<span><b>Height (Input):</b> Depending on the information displayed.</span><br />
+							<span><b>Icon:</b> info-circle</span>
+						</div>
+
+						<div style="margin-bottom: 80px;"></div>
+						<hr>
+						<div style="margin-bottom: 80px;"></div>
+
+						<h2><a id="cardanchor" style="text-decoration:none; color:#373737">Cards</a></h3>
+							<h3 style="opacity: 0.5">Cards are used to display.</h2>
+
 
 
 
@@ -818,7 +992,7 @@
 
 
 			<footer class="clear">
-				<p>&copy; 2017 Fergus Design Team.</p>
+				<p>&copy; 2018 Fergus Design Team.</p>
 			</footer>
 
 		</section>
