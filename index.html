@@ -39,10 +39,11 @@
 							<li><a href="#inputanchor">Input</a></li>
 							<li><a href="#searchanchor">Search</a></li>
 							<li><a href="#tooltipanchor">Tooltips</a></li>
+							<li><a href="#taganchor">Tags</a></li>
 							<li><a href="#cardanchor">Cards</a></li>
 							<li><a href="#modalanchor">Modals</a></li>
 							<li><a href="#paginationanchor">Pagination</a></li>
-							<li><a href="#messajesanchor">Messages</a></li>
+							<li><a href="#messageanchor">Messages</a></li>
 	            </ul>
 				</nav>
 
@@ -227,6 +228,12 @@
 								<div class="colorcard2" style="background-color: #edc212;">
 								</div>
 								<p class="color-card-text">STATUS-Y</br><span class="color-card-text2">#EDC212</span></p>
+						</div>
+
+						<div class="colorcard1" style="display: inline-block;">
+								<div class="colorcard2" style="background-color: #5C5E6C">
+								</div>
+								<p class="color-card-text">STATUS-Gray</br><span class="color-card-text2">#5C5E6C</span></p>
 						</div>
 
 
@@ -805,7 +812,7 @@
 			<div style="margin-bottom: 80px"></div>
 			<h3>States</h3>
 
-			<span style="display: flex; flex-direction: rox">
+			<span style="display: flex; flex-direction: row">
 				<div style="margin: 20px 10px 20px 0px">
 					<label>Label</label><br />
 					<input type="text" style="margin-top: 5px" placeholder="Active">
@@ -975,6 +982,7 @@
 						<div class="measurements-box"><p style="padding-bottom: 20px">
 							<span><b>Width:</b> 120px</span><br />
 							<span><b>Height (Input):</b> Depending on the information displayed.</span><br />
+							<span><b>Margin (Icon):</b> 5px.</span><br />
 							<span><b>Icon:</b> info-circle</span>
 						</div>
 
@@ -982,9 +990,191 @@
 						<hr>
 						<div style="margin-bottom: 80px;"></div>
 
-						<h2><a id="cardanchor" style="text-decoration:none; color:#373737">Cards</a></h3>
-							<h3 style="opacity: 0.5">Cards are used to display.</h2>
+						<h2><a id="taganchor" style="text-decoration:none; color:#373737">Tags</a></h3>
+							<h3 style="opacity: 0.5">Tags are used to show current status.</h2>
 
+							<div style="margin: 20px 0px">
+								<span class="tag all-good">All good</span>
+								<span class="tag attention">Attention</span>
+								<span class="tag warning">Warning</span>
+								<span class="tag not-done">Not done</span>
+								<span class="tag other-tags">Other tags</span>
+							</div>
+
+							<div class="measurements-box"><p style="padding-bottom: 20px">
+								<span><b>Width:</b> Depending on the text.</span><br />
+								<span><b>Padding:</b> 3px 10px.</span><br />
+								<span><b>Margin:</b> 5px.</span><br />
+								<span><b>Border radius:</b> 50px.</span><br />
+								<span><b>Background color (All good):</b> STATUS-G (#88BF5A).</span><br />
+								<span><b>Background color (Attention):</b> STATUS-Y (#EDC212).</span><br />
+								<span><b>Background color (Warning):</b> STATUS-O (#E29134).</span><br />
+								<span><b>Background color (Not done):</b> STATUS-R (#AE3941).</span><br />
+								<span><b>Background color (Other tags):</b> STATUS-Gray (#5C5E6C).</span>
+							</div>
+
+							<div style="margin-bottom: 80px;"></div>
+							<hr>
+							<div style="margin-bottom: 80px;"></div>
+
+							<h2><a id="cardanchor" style="text-decoration:none; color:#373737">Cards</a></h3>
+								<h3 style="opacity: 0.5">Cards are containers for a few short, related pieces of information.</h2>
+
+								<h3>Anatomy</h3>
+								<div style="margin: 20px 0px; position: relative">
+									<div class="card-container">
+										<div class="card-border"></div>
+										<div class="card-content">
+											<span>
+												<p>META DATA</p>
+												<span class="tag other-tags">Tag 1</span>
+												<span class="tag other-tags">Tag 2</span>
+											</span>
+											<h2>Card's title</h2>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.</p>
+										</div>
+										<div class="card-actions">
+											<i class="fa fa-ellipsis-h fa-2x" aria-hidden="true" style="color: #BFC2C5; text-align: right"></i>
+										</div>
+									</div>
+									<div class="card-button">
+										<p>Show more info</p>
+										<i class="fa fa-chevron-down fa-fw" aria-hidden="true" style="color: #0074B8"></i>
+									</div>
+								</div>
+
+								<p><i>Cards</i> are composed by basic information and will depend on each use case.<br />
+								Meta data, title and decription can be consider as required, while tags are optionals.<br />
+								The content in the right side will depend enterely on the use case. Same as the ellipsis icon.<br />
+								If there is secondary information or files to be displayed, the card can be expanded to show it.</p>
+
+								<div class="measurements-box"><p style="padding-bottom: 20px">
+									<span><b>Width:</b> 970px.</span><br />
+									<span><b>Height:</b> 140px.</span><br />
+									<span><b>Margin:</b> 10px.</span><br />
+									<span><b>Border radius:</b> 5px.</span><br />
+								</div>
+
+							<div style="margin-bottom: 80px;"></div>
+							<hr>
+							<div style="margin-bottom: 80px;"></div>
+
+							<h2><a id="modalanchor" style="text-decoration:none; color:#373737">Modals</a></h3>
+								<h3 style="opacity: 0.5">Modals create a mode that disables the main window to focus on some specific context in front of it.</h2>
+
+								<h3>Anatomy</h3>
+								<div style="margin: 20px 0px">
+									<div class="modal-container">
+										<div class="header-modal">
+											<h2>Modal's title</h2>
+											<i class="fa fa-times fa-2x" aria-hidden="true" style="color: #373737"></i>
+										</div>
+										<div class="content-modal">
+										</div>
+										<div class="footer-modal">
+											<span class="button neutral-button">Neutral</span>
+											<span class="button primary-button">Primary</span>
+										</div>
+									</div>
+								</div>
+
+								<p><i>Modals</i> are composed by a header, content area and footer.<br />
+								Header: contains the title and the icon that let the user close the modal.<br />
+								Content area: will depend on each use case. If the content exceeds the height<br />
+								of the container, a scroll bar will be displayed.<br />
+								Footer: contains a neutral and primary button right aligned.</p>
+
+								<div class="measurements-box"><p style="padding-bottom: 20px">
+									<span><b>Width:</b> 1000px.</span><br />
+									<span><b>Height:</b> 700px.</span><br />
+									<span><b>Background color:</b> White.</span><br />
+									<span><b>Shadow:</b> 0px 1px 2px #373737.</span><br />
+									<span><b>Font size (title):</b> 19px.</span><br />
+									<span><b>Margin (title):</b> 15px.</span><br />
+									<span><b>Margin right (buttons):</b> 30px.</span><br />
+									<span><b>Icon:</b> times</span>
+								</div>
+
+							<div style="margin-bottom: 80px;"></div>
+							<hr>
+							<div style="margin-bottom: 80px;"></div>
+
+							<h2><a id="paginationanchor" style="text-decoration:none; color:#373737">Pagination</a></h3>
+								<h3 style="opacity: 0.5">Pagination is used to navigate between pages.</h2>
+
+								<div style="margin: 20px 0px; display: flex; flex-direction: row; align-items: baseline">
+									<div style="display: flex; flex-direction: row; align-items: baseline; margin-right: 20px">
+										<i class="fa fa-chevron-left fa-fw" aria-hidden="true" style="color: #373737; margin-right: 3px"></i>
+										<p>Back</p>
+									</div>
+									<span class="pagination selected">1</span>
+									<span class="pagination">2</span>
+									<span class="pagination">3</span>
+									<span class="pagination">4</span>
+									<span class="pagination">...</span>
+									<span class="pagination">10</span>
+									<div style="display: flex; flex-direction: row; align-items: baseline; margin-left: 20px">
+										<p>Next</p>
+										<i class="fa fa-chevron-right fa-fw" aria-hidden="true" style="color: #373737; margin-left: 3px"></i>
+									</div>
+								</div>
+
+								<p>This component is mostly used with tables and lists.</p>
+
+								<div class="measurements-box"><p style="padding-bottom: 20px">
+									<span><b>Margin (between Back/Next and pages numbers):</b> 20px.</span><br />
+									<span><b>Padding (selected page):</b> 5px 10px.</span><br />
+									<span><b>Background color (selected page):</b> Interaction (#0074B8).</span><br />
+									<span><b>Icons:</b> chevron-left & chevron-right</span>
+								</div>
+
+								<div style="margin-bottom: 80px;"></div>
+								<hr>
+								<div style="margin-bottom: 80px;"></div>
+
+								<h2><a id="messageanchor" style="text-decoration:none; color:#373737">Messages</a></h3>
+									<h3 style="opacity: 0.5">Messages are used to inform and warn the user.</h2>
+
+									<h3>Types</h3>
+									<div style="margin: 20px 0px">
+										<div class="message information">
+											<i class="fa fa-info-circle fa-2x" aria-hidden="true"></i>
+											Some text for this information message.
+										</div>
+									</div>
+									<div style="margin: 20px 0px">
+										<div class="message success">
+											<i class="fa fa-check-circle fa-2x" aria-hidden="true"></i>
+											Some text for this success message.
+										</div>
+									</div>
+									<div style="margin: 20px 0px">
+										<div class="message warning-m">
+											<i class="fa fa-exclamation-triangle fa-2x" aria-hidden="true"></i>
+											Some text for this warning message.
+										</div>
+									</div>
+									<div style="margin: 20px 0px">
+										<div class="message error">
+											<i class="fa fa-times-circle fa-2x" aria-hidden="true"></i>
+											Some text for this error message.
+										</div>
+									</div>
+
+
+									<p><i>Information</i> messages will expose data that needs to be taken into account.<br />
+										<i>Success</i> messages are going to ensure the user that he/she did a good job.<br />
+										<i>Warning</i> messages will warn the user that something is not as expected and there may be future problems.<br />
+										<i>Error</i> messages will inform the user that something is not right.</p>
+
+									<div class="measurements-box"><p style="padding-bottom: 20px">
+										<span><b>Width:</b> will be the width of its parent component.</span><br />
+										<span><b>Height:</b> 38px.</span><br />
+										<span><b>Background color:</b> White.</span><br />
+										<span><b>Icon size:</b> fa-2x</span><br />
+										<span><b>Icons:</b> info-circle, check-circle, exclamation-triangle and times-circle.</span><br />
+										<span><b>Colors:</b> Interaction, STATUS-G, STATUS-O and STATUS-R.</span><br />
+									</div>
 
 
 
