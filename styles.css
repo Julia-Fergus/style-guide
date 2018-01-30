@@ -969,7 +969,7 @@ input:focus, input[type=text]:focus, input[type=time]:focus, input[type=date]:fo
 	align-items: center;
 }
 
-label{
+.form-label{
 	color: #373737;
 	font-weight: bold;
 	font-size: 13px;
@@ -1029,6 +1029,7 @@ label{
 	color: #373737;
 	margin: 5px 15px;
 	font-size: 13px;
+	cursor: pointer;
 }
 
 .selected{
