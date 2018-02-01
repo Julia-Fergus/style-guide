@@ -338,6 +338,7 @@ article .article-info a {
 	width: 400px;
 	margin-right: 50px;
 	margin-top: 40px;
+	margin-bottom: 40px;
 	padding-left: 50px;
 	padding-top: 35px;
 	padding-bottom: 25px;
@@ -944,12 +945,12 @@ input:checked + .slider:before {
 }
 
 input[type=text], input[type=number], input[type=date], input[type=time], input[type=password], textarea{
-	height: 20px;
-	min-width: 200px;
+	height: 30px;
+	width: 190px;
 	border: 1px solid #D7DFE1;
 	border-radius: 5px;
 	background-color: #ffffff;
-	padding: 5px 10px;
+	padding-left: 10px;
 	font-family: -apple-system,BlinkMacSystemFont, Roboto,"Helvetica Neue",sans-serif;
 	font-size:: 13px;
 	color: #373737;
@@ -970,7 +971,7 @@ input:focus, input[type=text]:focus, input[type=time]:focus, input[type=date]:fo
 	text-align: right;
 	z-index: 99;
 	top: 12px;
-	left: 195px;
+	left: 180px;
 	color: #0074B8;
 }
 
