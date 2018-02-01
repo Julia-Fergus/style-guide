@@ -328,10 +328,9 @@ article .article-info a {
 	background-color: #F5F6F8;
 	width: 550px;
 	margin-top: 20px;
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 	padding-left: 20px;
 	padding-top: 20px;
-
 }
 
 .typography{
@@ -343,10 +342,22 @@ article .article-info a {
 	padding-top: 35px;
 	padding-bottom: 25px;
 	display: inline-table;
-
 }
 
+.use-cases{
+	margin-bottom: 80px;
+}
 
+.use-cases h4{
+	font-style: italic;
+}
+
+.use-cases ul{
+	list-style: none;
+	color: #373737;
+	margin: 0px;
+	font-size: 13px;
+}
 
 /** footer **/
 footer {
@@ -545,23 +556,6 @@ footer p a:hover { color:#333; border-bottom-color: #333; }
 
 .button-outline-small:hover{
 	box-shadow: 0px 0px 3px #888888;
-}
-
-.dropdown-button {
-    position: relative;
-		display: initial;
-}
-
-.dropdown-button:hover .dropdown-content {
-    display: block;
-		top: 23px;
-		left: 5px;
-}
-
-.dropdown-button:hover .dropdown-content-icon {
-    display: block;
-		top: 15px;
-		left: -5px;
 }
 
 .primary-action{
@@ -968,6 +962,7 @@ input:focus, input[type=text]:focus, input[type=time]:focus, input[type=date]:fo
 
 ::placeholder{
 	color: #D7DFE1;
+	font-size: 11px;
 }
 
 .icon-inside-input{
