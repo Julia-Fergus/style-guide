@@ -617,7 +617,7 @@ footer p a:hover { color:#333; border-bottom-color: #333; }
     height: 15px;
     width: 15px;
     background-color: #ffffff;
-		border: 1px solid #D7DFE1;
+		border: 1px solid #595959;
     border-radius: 50%;
 }
 
@@ -672,7 +672,7 @@ footer p a:hover { color:#333; border-bottom-color: #333; }
   height: 15px;
   width: 15px;
   background-color: #ffffff;
-	border: 1px solid #D7DFE1;
+	border: 1px solid #595959;
 	border-radius: 5px;
 }
 
@@ -725,7 +725,7 @@ footer p a:hover { color:#333; border-bottom-color: #333; }
   right: 0;
   bottom: 0;
   background-color: #D7DFE1;
-	border: 1px solid #D7DFE1;
+	border: 1px solid #595959;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -781,8 +781,8 @@ input:checked + .slider:before {
 .dslider:before {
   position: absolute;
   content: "";
-  height: 13px;
-  width: 13px;
+  height: 1px;
+  width: 1px;
   left: 0px;
   bottom: 0px;
   background-color: #D7DFE1;
@@ -947,7 +947,7 @@ input:checked + .slider:before {
 input[type=text], input[type=number], input[type=date], input[type=time], input[type=password], textarea{
 	height: 30px;
 	width: 190px;
-	border: 1px solid #D7DFE1;
+	border: 1px solid #595959;
 	border-radius: 5px;
 	background-color: #ffffff;
 	padding-left: 10px;
@@ -962,16 +962,16 @@ input:focus, input[type=text]:focus, input[type=time]:focus, input[type=date]:fo
 }
 
 ::placeholder{
-	color: #D7DFE1;
+	color: #0074B8;
 	font-size: 11px;
+	font-style: italic;
 }
 
 .icon-inside-input{
 	position: absolute;
 	text-align: right;
 	z-index: 99;
-	top: 12px;
-	left: 180px;
+	left: 175px;
 	color: #0074B8;
 }
 
