@@ -326,11 +326,25 @@ article .article-info a {
 
 .measurements-box{
 	background-color: #F5F6F8;
+	color: #373737;
 	width: 600px;
 	margin-top: 20px;
 	margin-bottom: 30px;
-	padding-left: 20px;
-	padding-top: 20px;
+	padding: 20px;
+	font-size: 13px;
+	line-height: 19px;
+}
+
+.code-box{
+	background-color: #373737;
+	color: #ffffff;
+	width: 600px;
+	height: 50px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	padding: 20px;
+	font-size: 13px;
+	line-height: 19px;
 }
 
 .typography{
@@ -346,11 +360,7 @@ article .article-info a {
 }
 
 .use-cases{
-	margin-bottom: 80px;
-}
-
-.use-cases h4{
-	font-style: italic;
+	margin: 20px;
 }
 
 .use-cases ul{
@@ -407,12 +417,13 @@ footer p a:hover { color:#333; border-bottom-color: #333; }
 	margin-bottom: 20px;
 }
 
-.details span{
+.details a{
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: baseline;
 	margin-right: 30px;
+	padding: 5px;
 	cursor: pointer;
 }
 
@@ -438,14 +449,6 @@ footer p a:hover { color:#333; border-bottom-color: #333; }
 	user-select: none;
 }
 
-.button:hover{
-	box-shadow: 0px 0px 3px #888888;
-}
-
-.button:active{
-	box-shadow: inset 0px 1px 2px #373737;
-}
-
 .button i{
 	margin-right: 5px;
 }
@@ -454,6 +457,16 @@ footer p a:hover { color:#333; border-bottom-color: #333; }
 	background-color: #0074B8;
 	color: #ffffff;
 	font-weight: bold;
+}
+
+.primary-button:hover{
+	box-shadow: 0px 0px 3px #888888;
+	background-color: #025F95;
+}
+
+.primary-button:active{
+	background-color: #0074B8;
+	box-shadow: inset 0px 1px 2px #373737;
 }
 
 .primary-button-disabled{
@@ -469,6 +482,16 @@ footer p a:hover { color:#333; border-bottom-color: #333; }
 	border: 1px solid #D7DFE1;
 }
 
+.neutral-button:hover{
+	box-shadow: 0px 0px 3px #888888;
+	background-color: #E1E1E8;
+}
+
+.neutral-button:active{
+	background-color: #F5F5F7;
+	box-shadow: inset 0px 1px 2px #373737;
+}
+
 .neutral-button-disabled{
 	background-color: #ffffff;
 	color: #D7DFE1;
@@ -479,6 +502,16 @@ footer p a:hover { color:#333; border-bottom-color: #333; }
 .destructive-button{
 	background-color: #CC3300;
 	color: #ffffff;
+}
+
+.destructive-button:hover{
+	box-shadow: 0px 0px 3px #888888;
+	background-color: #B21900;
+}
+
+.destructive-button:active{
+	background-color: #CC3300;
+	box-shadow: inset 0px 1px 2px #373737;
 }
 
 .destructive-button-disabled{

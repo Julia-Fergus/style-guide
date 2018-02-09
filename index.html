@@ -19,6 +19,17 @@
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
 </head>
 
+<script>
+function myFunction(target) {
+		var x = document.getElementById(target);
+		if (x.style.display === "none") {
+				x.style.display = "block";
+		} else {
+				x.style.display = "none";
+		}
+}
+</script>
+
 <body>
 
 		<section id="body" class="width">
@@ -224,21 +235,21 @@
 				</div>
 
 				<div class="details">
-					<span>
-						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
-						<p>Use cases</p>
-					</span>
+						<a onclick="myFunction('use-case-typography')">
+							<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+							<p>Use cases</p>
+						</a>
 				</div>
 
-				<div class="use-cases">
-					<h4>Use Cases</h4>
+				<div id="use-case-typography" class="use-cases" style="display: none">
 					<ul>
 						<li><b>H1:</b> Main title of the UI.</li>
 						<li><b>H2:</b> Divide sections in a UI that already have an H1.</li>
 						<li><b>H3:</b> Titles inside sections.</li>
 						<li><b>H4:</b> Highlight plain text.</li>
 						<li><b>Body:</b> Plain text.</li>
-						<li><b>Small:</b> Texts inside tags, placeholders and small spaces.</li>
+						<li><b>Small:</b> Texts inside tags, placeholders and small spaces.<br />
+							Also for cases in which 13px need to be compromise for some reason.</li>
 					</ul>
 				</div>
 
@@ -264,60 +275,63 @@
 			Everytime that a negative action is going to be done, a <i>destructive button</i> will be displayed to ensure that the user is sure to perform that action.</p>
 
 			<div class="details">
-				<span>
-					<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
-					<p>Design specs</p>
-				</span>
-				<span>
-					<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
-					<p>Use cases</p>
-				</span>
-				<span>
-					<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
-					<p>In use (example)</p>
-				</span>
-				<span>
-					<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
-					<p>Code</p>
-				</span>
-			</div>
-
-			<div class="measurements-box"><p style="padding-bottom: 20px;">
-				<span><b>Height:</b> 30px</span><br />
-				<span><b>Width:</b> depending on the content</span><br />
-				<span><b>Padding (Left & Right):</b> 15px</span><br />
-				<span><b>Margin:</b> 15px 5px</span><br />
-				<span><b>Border radius:</b> 5px</span><br /><br />
-				<span><b>Primary button</b></span><br />
-				<span><b>Background color:</b> Interaction</span><br />
-				<span><b>Font color:</b> White</span><br />
-				<span><b>Font size:</b> 13px</span><br />
-				<span><b>Font style:</b> bold</span><br /><br />
-				<span><b>Neutral button</b></span><br />
-				<span><b>Background color:</b> Zero</span><br />
-				<span><b>Border color:</b> Fog</span><br />
-				<span><b>Font color:</b> Text</span><br />
-				<span><b>Font size:</b> 13px</span><br />
-				<span><b>Font style:</b> regular</span><br /><br />
-				<span><b>Link button</b></span><br />
-				<span><b>Font color:</b> Interaction</span><br />
-				<span><b>Font size:</b> 13px</span><br />
-				<span><b>Font style:</b> regular</span><br /><br />
-				<span><b>Destructive button</b></span><br />
-				<span><b>Background color:</b> Destruction</span><br />
-				<span><b>Font color:</b> White</span><br />
-				<span><b>Font size:</b> 13px</span><br />
-				<span><b>Font style:</b> regular</span>
-			</div>
-
-			<div class="use-cases">
-				<h4>Use Cases</h4>
-				<ul>
-					<li><b>Primary button:</b> Main actions (create a job, site visit, add variation).</li>
-					<li><b>Neutral button:</b> Rest of the actions (schedule quote, assign person/group, add purchase order).</li>
-					<li><b>Link button:</b> To redirect the user to another context (job number, customer name, email address).</li>
-					<li><b>Destructive button:</b> Negative actions (void or delete).</li>
-				</ul>
+					<a onclick="myFunction('specs-buttons')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>Design specs</p>
+					</a>
+					<div class="measurements-box" id="specs-buttons" style="display: none">
+						<span><b>Height:</b> 30px</span><br />
+						<span><b>Width:</b> depending on the content</span><br />
+						<span><b>Padding (Left & Right):</b> 15px</span><br />
+						<span><b>Margin:</b> 15px 5px</span><br />
+						<span><b>Border radius:</b> 5px</span><br /><br />
+						<span><b>Primary button</b></span><br />
+						<span><b>Background color:</b> Interaction</span><br />
+						<span><b>Font color:</b> White</span><br />
+						<span><b>Font size:</b> 13px</span><br />
+						<span><b>Font style:</b> bold</span><br /><br />
+						<span><b>Neutral button</b></span><br />
+						<span><b>Background color:</b> Zero</span><br />
+						<span><b>Border color:</b> Fog</span><br />
+						<span><b>Font color:</b> Text</span><br />
+						<span><b>Font size:</b> 13px</span><br />
+						<span><b>Font style:</b> regular</span><br /><br />
+						<span><b>Link button</b></span><br />
+						<span><b>Font color:</b> Interaction</span><br />
+						<span><b>Font size:</b> 13px</span><br />
+						<span><b>Font style:</b> regular</span><br /><br />
+						<span><b>Destructive button</b></span><br />
+						<span><b>Background color:</b> Destruction</span><br />
+						<span><b>Font color:</b> White</span><br />
+						<span><b>Font size:</b> 13px</span><br />
+						<span><b>Font style:</b> regular</span>
+					</div>
+					<a onclick="myFunction('use-case-buttons')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>Use cases</p>
+					</a>
+					<div class="use-cases" id="use-case-buttons" style="display: none">
+						<ul>
+							<li><b>Primary button:</b> Main actions (create a job, site visit, add variation).</li>
+							<li><b>Neutral button:</b> Rest of the actions (schedule quote, assign person/group, add purchase order).</li>
+							<li><b>Link button:</b> To redirect the user to another context (job number, customer name, email address).</li>
+							<li><b>Destructive button:</b> Negative actions (void or delete).</li>
+						</ul>
+					</div>
+					<a onclick="myFunction('in-use-buttons')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>In use (example)</p>
+					</a>
+					<div id="in-use-buttons" style="display: none; padding: 20px">
+						<img src="imgs/buttons.png" />
+					</div>
+					<a onclick="myFunction('code-buttons')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>Code</p>
+					</a>
+					<div class="code-box" id="code-buttons" style="display: none">
+						<span>[Code]</span>
+					</div>
 			</div>
 
 			<h4>Dropdown & Combo buttons</h4>
@@ -333,33 +347,55 @@
 				Make the label sufficiently representative of the actions the button contains.<br />
 				Either primary or neutral button can be used depending on the importance of the actions.</p>
 
-			<div class="measurements-box"><p style="padding-bottom: 20px;">
-				<span><b>Height:</b> 30px</span><br />
-				<span><b>Padding (Left & Right):</b> 15px</span><br />
-				<span><b>Margin:</b> 15px 5px</span><br />
-				<span><b>Border radius:</b> 5px</span><br /><br />
-				<span><b>Dropdown button</b></span><br />
-				<span><b>Icon:</b> caret-down</span><br />
-				<span><b>Icon size:</b> 16px</span><br />
-				<span><b>Margin left (Icon):</b> 5px</span><br />
-				<span><b>Margin (between button and dropdown):</b> 3px</span><br />
-				<span><b>Background color (hover - dropdown):</b> Cloud</span><br /><br />
-				<span><b>Combo button</b></span><br />
-				<span><b>Icon:</b> caret-down</span><br />
-				<span><b>Icon size:</b> 16px</span><br />
-				<span><b>Margin left & right (Icon):</b> 5px</span><br />
-				<span><b>Margin (between buttons):</b> 1px</span><br />
-				<span><b>Background color (hover - dropdown):</b> Cloud</span>
-			</div>
-
-			<div class="use-cases">
-				<h4>Use Cases</h4>
-				<ul>
-					<li><b>Dropdown button:</b> To gorup options or actions related to a specific context (select type of certificate).</li>
-					<li><b>Dropdown with icons button:</b> Icon will be used to emphasize actions (summary of activity, add credit, add purchase).</li>
-					<li><b>Combo button:</b> For cases in which there is a main action and secondary actions (hazards, create customer invoice).</li>
-				</ul>
-			</div>
+				<div class="details">
+						<a onclick="myFunction('specs-dropcombo-buttons')">
+							<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+							<p>Design specs</p>
+						</a>
+						<div class="measurements-box" id="specs-dropcombo-buttons" style="display: none">
+							<span><b>Height:</b> 30px</span><br />
+							<span><b>Padding (Left & Right):</b> 15px</span><br />
+							<span><b>Margin:</b> 15px 5px</span><br />
+							<span><b>Border radius:</b> 5px</span><br /><br />
+							<span><b>Dropdown button</b></span><br />
+							<span><b>Icon:</b> caret-down</span><br />
+							<span><b>Icon size:</b> 16px</span><br />
+							<span><b>Margin left (Icon):</b> 5px</span><br />
+							<span><b>Margin (between button and dropdown):</b> 3px</span><br />
+							<span><b>Background color (hover - dropdown):</b> Cloud</span><br /><br />
+							<span><b>Combo button</b></span><br />
+							<span><b>Icon:</b> caret-down</span><br />
+							<span><b>Icon size:</b> 16px</span><br />
+							<span><b>Margin left & right (Icon):</b> 5px</span><br />
+							<span><b>Margin (between buttons):</b> 1px</span><br />
+							<span><b>Background color (hover - dropdown):</b> Cloud</span>
+						</div>
+						<a onclick="myFunction('use-case-dropcombo-buttons')">
+							<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+							<p>Use cases</p>
+						</a>
+						<div class="use-cases" id="use-case-dropcombo-buttons" style="display: none">
+							<ul>
+								<li><b>Dropdown button:</b> To gorup options or actions related to a specific context (select type of certificate).</li>
+								<li><b>Dropdown with icons button:</b> Icon will be used to emphasize actions (summary of activity, add credit, add purchase).</li>
+								<li><b>Combo button:</b> For cases in which there is a main action and secondary actions (hazards, create customer invoice).</li>
+							</ul>
+						</div>
+						<a onclick="myFunction('in-use-dropcombo-buttons')">
+							<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+							<p>In use (example)</p>
+						</a>
+						<div id="in-use-dropcombo-buttons" style="display: none; padding: 20px">
+							<img src="imgs/dropcombo.png" />
+						</div>
+						<a onclick="myFunction('code-dropcombo-buttons')">
+							<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+							<p>Code</p>
+						</a>
+						<div class="code-box" id="code-dropcombo-buttons" style="display: none">
+							<span>[Code]</span>
+						</div>
+				</div>
 
 			<h4>Radio Buttons</h4>
 			<div style="margin: 40px 0px">
@@ -379,23 +415,45 @@
 
 			<p><i>Radio buttons</i> are used when the user has to choose only one option from the given</p>
 
-			<div class="measurements-box"><p style="padding-bottom: 20px;">
-				<span><b>Width:</b> 15px</span><br />
-				<span><b>Height:</b> 15px</span><br />
-				<span><b>Background Color (not checked):</b> White</span><br />
-				<span><b>Border color (not checked):</b> Gray</span><br />
-				<span><b>Color (checked):</b> Interaction</span><br />
-				<span><b>Background Color (disable):</b> Fog</span><br />
-				<span><b>Circle inside button (size):</b> 5px</span><br />
-				<span><b>Font size (Label):</b> 13px</span><br />
-				<span><b>Margin (between button and label):</b> 10px</span><br />
-			</div>
-
-			<div class="use-cases">
-				<h4>Use Cases</h4>
-				<ul>
-					<li>When only one option is available at the same time (date range, view/edit).</li>
-				</ul>
+			<div class="details">
+					<a onclick="myFunction('specs-radio-buttons')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>Design specs</p>
+					</a>
+					<div class="measurements-box" id="specs-radio-buttons" style="display: none">
+						<span><b>Width:</b> 15px</span><br />
+						<span><b>Height:</b> 15px</span><br />
+						<span><b>Background Color (not checked):</b> White</span><br />
+						<span><b>Border color (not checked):</b> Gray</span><br />
+						<span><b>Color (checked):</b> Interaction</span><br />
+						<span><b>Background Color (disable):</b> Fog</span><br />
+						<span><b>Circle inside button (size):</b> 5px</span><br />
+						<span><b>Font size (Label):</b> 13px</span><br />
+						<span><b>Margin (between button and label):</b> 10px</span><br />
+					</div>
+					<a onclick="myFunction('use-case-radio-buttons')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>Use cases</p>
+					</a>
+					<div class="use-cases" id="use-case-radio-buttons" style="display: none">
+						<ul>
+							<li>When only one option is available at the same time (date range, view/edit).</li>
+						</ul>
+					</div>
+					<a onclick="myFunction('in-use-radio-buttons')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>In use (example)</p>
+					</a>
+					<div id="in-use-radio-buttons" style="display: none; padding: 20px">
+						<img src="imgs/radio.png" />
+					</div>
+					<a onclick="myFunction('code-radio-buttons')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>Code</p>
+					</a>
+					<div class="code-box" id="code-radio-buttons" style="display: none">
+						<span>[Code]</span>
+					</div>
 			</div>
 
 			<h4>Checkbox Buttons</h4>
@@ -416,24 +474,46 @@
 
 			<p><i>Checkbox buttons</i> are used when the user can choose more than one option from the given.</p>
 
-			<div class="measurements-box"><p style="padding-bottom: 20px;">
-				<span><b>Width:</b> 15px</span><br />
-				<span><b>Height:</b> 15px</span><br />
-				<span><b>Background Color (not checked):</b> White</span><br />
-				<span><b>Border color (not checked):</b> Gray</span><br />
-				<span><b>Color (checked):</b> Interaction</span><br />
-				<span><b>Background Color (disable):</b> Fog</span><br />
-				<span><b>Icon inside button (size):</b> 5px</span><br />
-				<span><b>Font size (Label):</b> 13px</span><br />
-				<span><b>Margin (between button and label):</b> 10px</span><br />
-			</div>
-
-			<div class="use-cases">
-				<h4>Use Cases</h4>
-				<ul>
-					<li>When more than one option is available at the same time (assign, settings).</li>
-					<li>To select/deselect and option (settings, views).</li>
-				</ul>
+			<div class="details">
+					<a onclick="myFunction('specs-checkbox-buttons')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>Design specs</p>
+					</a>
+					<div class="measurements-box" id="specs-checkbox-buttons" style="display: none">
+						<span><b>Width:</b> 15px</span><br />
+						<span><b>Height:</b> 15px</span><br />
+						<span><b>Background Color (not checked):</b> White</span><br />
+						<span><b>Border color (not checked):</b> Gray</span><br />
+						<span><b>Color (checked):</b> Interaction</span><br />
+						<span><b>Background Color (disable):</b> Fog</span><br />
+						<span><b>Icon inside button (size):</b> 5px</span><br />
+						<span><b>Font size (Label):</b> 13px</span><br />
+						<span><b>Margin (between button and label):</b> 10px</span>
+					</div>
+					<a onclick="myFunction('use-case-checkbox-buttons')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>Use cases</p>
+					</a>
+					<div class="use-cases" id="use-case-checkbox-buttons" style="display: none">
+						<ul>
+							<li>When more than one option is available at the same time (assign, settings).</li>
+							<li>To select/deselect and option (settings, views).</li>
+						</ul>
+					</div>
+					<a onclick="myFunction('in-use-checkbox-buttons')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>In use (example)</p>
+					</a>
+					<div id="in-use-checkbox-buttons" style="display: none; padding: 20px">
+						<img src="imgs/checkbox.png" />
+					</div>
+					<a onclick="myFunction('code-checkbox-buttons')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>Code</p>
+					</a>
+					<div class="code-box" id="code-checkbox-buttons" style="display: none">
+						<span>[Code]</span>
+					</div>
 			</div>
 
 			<h4>Switch Buttons</h4>
@@ -457,23 +537,45 @@
 
 			<p><i>Switch buttons</i> are used to determine states (activated / deactivated).</p>
 
-			<div class="measurements-box"><p style="padding-bottom: 20px;">
-				<span><b>Width:</b> 40px</span><br />
-				<span><b>Height:</b> 20px</span><br />
-				<span><b>Background Color (deactivated):</b> Fog</span><br />
-				<span><b>Border color (deactivated):</b> Gray</span><br />
-				<span><b>Color (activated):</b> Interaction</span><br />
-				<span><b>Background Color (disable):</b> Fog</span><br />
-				<span><b>Circle inside button (size):</b> 15px</span><br />
-				<span><b>Font size (Label):</b> 13px</span><br />
-				<span><b>Margin (between button and label):</b> 10px</span><br />
-			</div>
-
-			<div class="use-cases">
-				<h4>Use Cases</h4>
-				<ul>
-					<li>When an option is activate or deactivated (settings).</li>
-				</ul>
+			<div class="details">
+					<a onclick="myFunction('specs-switch-buttons')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>Design specs</p>
+					</a>
+					<div class="measurements-box" id="specs-switch-buttons" style="display: none">
+						<span><b>Width:</b> 40px</span><br />
+						<span><b>Height:</b> 20px</span><br />
+						<span><b>Background Color (deactivated):</b> Fog</span><br />
+						<span><b>Border color (deactivated):</b> Gray</span><br />
+						<span><b>Color (activated):</b> Interaction</span><br />
+						<span><b>Background Color (disable):</b> Fog</span><br />
+						<span><b>Circle inside button (size):</b> 15px</span><br />
+						<span><b>Font size (Label):</b> 13px</span><br />
+						<span><b>Margin (between button and label):</b> 10px</span>
+					</div>
+					<a onclick="myFunction('use-case-switch-buttons')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>Use cases</p>
+					</a>
+					<div class="use-cases" id="use-case-switch-buttons" style="display: none">
+						<ul>
+							<li>When an option is activate or deactivated (settings).</li>
+						</ul>
+					</div>
+					<a onclick="myFunction('in-use-switch-buttons')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>In use (example)</p>
+					</a>
+					<div id="in-use-switch-buttons" style="display: none; padding: 20px">
+						<img src="imgs/switch.png" />
+					</div>
+					<a onclick="myFunction('code-switch-buttons')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>Code</p>
+					</a>
+					<div class="code-box" id="code-switch-buttons" style="display: none">
+						<span>[Code]</span>
+					</div>
 			</div>
 
 			<h4>Icon buttons</h4>
@@ -494,25 +596,47 @@
 			<p><i>Icon buttons</i> are going to be used when they can represent clearly the action to which it refers.<br />
 			They will be always accompanied by tooltips for novice users. Also they can display more options (similar to dropdown buttons).</p>
 
-			<div class="measurements-box"><p style="padding-bottom: 20px;">
-				<span><b>Width:</b> 34px</span><br />
-				<span><b>Height:</b> 30px</span><br />
-				<span><b>Background color:</b> Zero</span><br />
-				<span><b>Border color:</b> Fog</span><br />
-				<span><b>Icon size:</b> 16px</span><br />
-				<span><b>Color (Icon):</b> Text</span><br />
-				<span><b>Margin:</b> 5px</span><br />
-				<span><b>Margin (between button and dropdown):</b> 3px</span><br />
-				<span><b>Background color (hover - dropdown):</b> Cloud</span>
-			</div>
-
-			<div class="use-cases">
-				<h4>Use Cases</h4>
-				<ul>
-					<li>To represent an action (job actions).</li>
-					<li>When there is little space and a lot of actions available (email, comment, edit and delete).</li>
-					<li>To summarize actions in one button (cog icon).</li>
-				</ul>
+			<div class="details">
+					<a onclick="myFunction('specs-icon-buttons')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>Design specs</p>
+					</a>
+					<div class="measurements-box" id="specs-icon-buttons" style="display: none">
+						<span><b>Width:</b> 34px</span><br />
+						<span><b>Height:</b> 30px</span><br />
+						<span><b>Background color:</b> Zero</span><br />
+						<span><b>Border color:</b> Fog</span><br />
+						<span><b>Icon size:</b> 16px</span><br />
+						<span><b>Color (Icon):</b> Text</span><br />
+						<span><b>Margin:</b> 5px</span><br />
+						<span><b>Margin (between button and dropdown):</b> 3px</span><br />
+						<span><b>Background color (hover - dropdown):</b> Cloud</span>
+					</div>
+					<a onclick="myFunction('use-case-icon-buttons')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>Use cases</p>
+					</a>
+					<div class="use-cases" id="use-case-icon-buttons" style="display: none">
+						<ul>
+							<li>To represent an action (job actions).</li>
+							<li>When there is little space and a lot of actions available (email, comment, edit and delete).</li>
+							<li>To summarize actions in one button (cog icon).</li>
+						</ul>
+					</div>
+					<a onclick="myFunction('in-use-icon-buttons')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>In use (example)</p>
+					</a>
+					<div id="in-use-icon-buttons" style="display: none; padding: 20px">
+						<img src="imgs/icon.png" />
+					</div>
+					<a onclick="myFunction('code-icon-buttons')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>Code</p>
+					</a>
+					<div class="code-box" id="code-icon-buttons" style="display: none">
+						<span>[Code]</span>
+					</div>
 			</div>
 
 			<div style="margin-bottom: 80px;"></div>
@@ -527,20 +651,42 @@
 
 			<p><i>Buttons with icons</i> are going to be used to emphasize the action it represents.</p>
 
-			<div class="measurements-box"><p style="padding-bottom: 20px;">
-				<span><b>Width:</b> depending on its content</span><br />
-				<span><b>Height:</b> 30px</span><br />
-				<span><b>Padding (Left & Right):</b> 15px</span><br />
-				<span><b>Margin:</b> 15px 5px</span><br />
-				<span><b>Border radius:</b> 5px</span><br />
-				<span><b>Margin right (between icon and text):</b> 5px</span>
-			</div>
-
-			<div class="use-cases">
-				<h4>Use Cases</h4>
-				<ul>
-					<li>To visually emphazise a message (create new job or site viisit).</li>
-				</ul>
+			<div class="details">
+					<a onclick="myFunction('specs-withicon-buttons')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>Design specs</p>
+					</a>
+					<div class="measurements-box" id="specs-withicon-buttons" style="display: none">
+						<span><b>Width:</b> depending on its content</span><br />
+						<span><b>Height:</b> 30px</span><br />
+						<span><b>Padding (Left & Right):</b> 15px</span><br />
+						<span><b>Margin:</b> 15px 5px</span><br />
+						<span><b>Border radius:</b> 5px</span><br />
+						<span><b>Margin right (between icon and text):</b> 5px</span>
+					</div>
+					<a onclick="myFunction('use-case-withicon-buttons')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>Use cases</p>
+					</a>
+					<div class="use-cases" id="use-case-withicon-buttons" style="display: none">
+						<ul>
+							<li>To visually emphazise a message (create new job or site viisit).</li>
+						</ul>
+					</div>
+					<a onclick="myFunction('in-use-withicon-buttons')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>In use (example)</p>
+					</a>
+					<div id="in-use-withicon-buttons" style="display: none; padding: 20px">
+						<img src="imgs/withicon.png" />
+					</div>
+					<a onclick="myFunction('code-withicon-buttons')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>Code</p>
+					</a>
+					<div class="code-box" id="code-withicon-buttons" style="display: none">
+						<span>[Code]</span>
+					</div>
 			</div>
 
 			<h4>Small Buttons</h4>
@@ -553,21 +699,43 @@
 			<p><i>Small buttons</i> will be placed inside other components.<br />
 				Icon are not going to be used because of the lack of space.</p>
 
-			<div class="measurements-box"><p style="padding-bottom: 20px;">
-				<span><b>Width:</b> depending on its content</span><br />
-				<span><b>Height:</b> 20px</span><br />
-				<span><b>Padding (Left & Right):</b> 15px</span><br />
-				<span><b>Margin:</b> 15px 5px</span><br />
-				<span><b>Border radius:</b> 5px</span><br />
-				<span><b>Font size (only primary button):</b> 11px</span>
-			</div>
-
-			<div class="use-cases">
-				<h4>Use Cases</h4>
-				<ul>
-					<li>Inside other components (tables, cards, tooltips).</li>
-				</ul>
-			</div>
+				<div class="details">
+						<a onclick="myFunction('specs-small-buttons')">
+							<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+							<p>Design specs</p>
+						</a>
+						<div class="measurements-box" id="specs-small-buttons" style="display: none">
+							<span><b>Width:</b> depending on its content</span><br />
+							<span><b>Height:</b> 20px</span><br />
+							<span><b>Padding (Left & Right):</b> 15px</span><br />
+							<span><b>Margin:</b> 15px 5px</span><br />
+							<span><b>Border radius:</b> 5px</span><br />
+							<span><b>Font size (only primary button):</b> 11px</span>
+						</div>
+						<a onclick="myFunction('use-case-small-buttons')">
+							<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+							<p>Use cases</p>
+						</a>
+						<div class="use-cases" id="use-case-small-buttons" style="display: none">
+							<ul>
+								<li>Inside other components (tables, cards, tooltips).</li>
+							</ul>
+						</div>
+						<a onclick="myFunction('in-use-small-buttons')">
+							<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+							<p>In use (example)</p>
+						</a>
+						<div id="in-use-small-buttons" style="display: none; padding: 20px">
+							<img src="imgs/small.png" />
+						</div>
+						<a onclick="myFunction('code-small-buttons')">
+							<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+							<p>Code</p>
+						</a>
+						<div class="code-box" id="code-small-buttons" style="display: none">
+							<span>[Code]</span>
+						</div>
+				</div>
 
 			<h4>Outline Buttons</h4>
 			<div style="margin: 40px 0px">
@@ -581,21 +749,43 @@
 				Note: neutral buttons will maintain the previously established style.<br />
 				Consult it with the design team .</p>
 
-			<div class="measurements-box"><p style="padding-bottom: 20px;">
-				<span><b>Width:</b> depending on its content</span><br />
-				<span><b>Height:</b> 30px</span><br />
-				<span><b>Padding (Left & Right):</b> 15px</span><br />
-				<span><b>Margin:</b> 15px 5px</span><br />
-				<span><b>Border radius:</b> 5px</span><br />
-				<span><b>Inverted colors (background and border) except of neutral button</b></span>
-			</div>
-
-			<div class="use-cases">
-				<h4>Use Cases</h4>
-				<ul>
-					<li>Corner cases (attachment input).</li>
-				</ul>
-			</div>
+				<div class="details">
+						<a onclick="myFunction('specs-outline-buttons')">
+							<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+							<p>Design specs</p>
+						</a>
+						<div class="measurements-box" id="specs-outline-buttons" style="display: none">
+							<span><b>Width:</b> depending on its content</span><br />
+							<span><b>Height:</b> 30px</span><br />
+							<span><b>Padding (Left & Right):</b> 15px</span><br />
+							<span><b>Margin:</b> 15px 5px</span><br />
+							<span><b>Border radius:</b> 5px</span><br />
+							<span><b>Inverted colors (background and border) except of neutral button</b></span>
+						</div>
+						<a onclick="myFunction('use-case-outline-buttons')">
+							<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+							<p>Use cases</p>
+						</a>
+						<div class="use-cases" id="use-case-outline-buttons" style="display: none">
+							<ul>
+								<li>Corner cases (attachment input).</li>
+							</ul>
+						</div>
+						<a onclick="myFunction('in-use-outline-buttons')">
+							<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+							<p>In use (example)</p>
+						</a>
+						<div id="in-use-outline-buttons" style="display: none; padding: 20px">
+							<img src="imgs/outline.png" />
+						</div>
+						<a onclick="myFunction('code-outline-buttons')">
+							<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+							<p>Code</p>
+						</a>
+						<div class="code-box" id="code-outline-buttons" style="display: none">
+							<span>[Code]</span>
+						</div>
+				</div>
 
 			<h4>Small Outline Buttons</h4>
 			<div style="margin: 40px 0px">
@@ -607,22 +797,37 @@
 				Note: neutral buttons will maintain the previously established style.<br />
 				Consult it with the design team .</p>
 
-			<div class="measurements-box"><p style="padding-bottom: 20px;">
-				<span><b>Width:</b> depending on its content</span><br />
-				<span><b>Height:</b> 20px</span><br />
-				<span><b>Padding (Left & Right):</b> 15px</span><br />
-				<span><b>Margin:</b> 15px 5px</span><br />
-				<span><b>Border radius:</b> 5px</span><br />
-				<span><b>Inverted colors (background and border) except of neutral button</b></span><br />
-				<span><b>Font size (only primary button):</b> 11px</span>
-			</div>
-
-			<div class="use-cases">
-				<h4>Use Cases</h4>
-				<ul>
-					<li>Corner cases inside other components.</li>
-				</ul>
-			</div>
+				<div class="details">
+						<a onclick="myFunction('specs-smalloutline-buttons')">
+							<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+							<p>Design specs</p>
+						</a>
+						<div class="measurements-box" id="specs-smalloutline-buttons" style="display: none">
+							<span><b>Width:</b> depending on its content</span><br />
+							<span><b>Height:</b> 20px</span><br />
+							<span><b>Padding (Left & Right):</b> 15px</span><br />
+							<span><b>Margin:</b> 15px 5px</span><br />
+							<span><b>Border radius:</b> 5px</span><br />
+							<span><b>Inverted colors (background and border) except of neutral button</b></span><br />
+							<span><b>Font size (only primary button):</b> 11px</span>
+						</div>
+						<a onclick="myFunction('use-case-smalloutline-buttons')">
+							<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+							<p>Use cases</p>
+						</a>
+						<div class="use-cases" id="use-case-smalloutline-buttons" style="display: none">
+							<ul>
+								<li>Corner cases inside other components.</li>
+							</ul>
+						</div>
+						<a onclick="myFunction('code-smalloutline-buttons')">
+							<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+							<p>Code</p>
+						</a>
+						<div class="code-box" id="code-smalloutline-buttons" style="display: none">
+							<span>[Code]</span>
+						</div>
+				</div>
 
 			<div style="margin-bottom: 80px;"></div>
 			<h3>States</h3>
@@ -646,25 +851,47 @@
 			<i>Disable</i> shows that a button is unable.<br />
 			<i>Loading</i> is providing visual feedback.</p>
 
-		<div class="measurements-box"><p style="padding-bottom: 20px;">
-			<span><b>Width:</b> depending on its content</span><br />
-			<span><b>Height:</b> 30px</span><br />
-			<span><b>Padding (Left & Right):</b> 15px</span><br />
-			<span><b>Margin:</b> 15px 5px</span><br />
-			<span><b>Border radius:</b> 5px</span><br />
-			<span><b>Icon (loading state):</b> spinner</span><br />
-			<span><b>Animation (icon):</b> fa-spin</span><br />
-			<span><b>Margin right (Icon):</b> 5px</span>
-		</div>
-
-		<div class="use-cases">
-			<h4>Use Cases</h4>
-			<ul>
-				<li><b>Active:</b> enabled buttons.</li>
-				<li><b>Disable:</b> unabled buttons (create job button until all data is completed).</li>
-				<li><b>Loading:</b> giving feedback to the user (create job button while processing).</li>
-			</ul>
-		</div>
+			<div class="details">
+					<a onclick="myFunction('specs-statebtn')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>Design specs</p>
+					</a>
+					<div class="measurements-box" id="specs-statebtn" style="display: none">
+						<span><b>Width:</b> depending on its content</span><br />
+						<span><b>Height:</b> 30px</span><br />
+						<span><b>Padding (Left & Right):</b> 15px</span><br />
+						<span><b>Margin:</b> 15px 5px</span><br />
+						<span><b>Border radius:</b> 5px</span><br />
+						<span><b>Icon (loading state):</b> spinner</span><br />
+						<span><b>Animation (icon):</b> fa-spin</span><br />
+						<span><b>Margin right (Icon):</b> 5px</span>
+					</div>
+					<a onclick="myFunction('use-case-statebtn')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>Use cases</p>
+					</a>
+					<div class="use-cases" id="use-case-statebtn" style="display: none">
+						<ul>
+							<li><b>Active:</b> enabled buttons.</li>
+							<li><b>Disable:</b> unabled buttons (create job button until all data is completed).</li>
+							<li><b>Loading:</b> giving feedback to the user (create job button while processing).</li>
+						</ul>
+					</div>
+					<a onclick="myFunction('in-use-statebtn')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>In use (example)</p>
+					</a>
+					<div id="in-use-statebtn" style="display: none; padding: 20px">
+						<img src="imgs/statebtn.png" />
+					</div>
+					<a onclick="myFunction('code-statebtn')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>Code</p>
+					</a>
+					<div class="code-box" id="code-statebtn" style="display: none">
+						<span>[Code]</span>
+					</div>
+			</div>
 
 		<div style="margin-bottom: 80px;"></div>
 		<hr>
@@ -681,25 +908,47 @@
 
 			<p><i>Placeholders</i> are useful as they guide the user when completing inputs.</p>
 
-			<div class="measurements-box"><p style="padding-bottom: 20px;">
-				<span><b>Min width:</b> 200px</span><br />
-				<span><b>Height:</b> 30px</span><br />
-				<span><b>Background color:</b> White</span><br />
-				<span><b>Border color:</b> Gray</span><br />
-				<span><b>Padding (Left & Right):</b> 10px</span><br />
-				<span><b>Margin:</b> 5px</span><br />
-				<span><b>Border radius:</b> 5px</span><br /><br />
-				<span><b>Placeholder</b></span><br />
-				<span><b>Font size:</b> 11px</span><br />
-				<span><b>Font color:</b> Gray</span>
-			</div>
-
-			<div class="use-cases">
-				<h4>Use Cases</h4>
-				<ul>
-					<li>Everytime the user has to enter data (forms).</li>
-					<li>When data was entered but the user can still edit it (job titles).</li>
-				</ul>
+			<div class="details">
+					<a onclick="myFunction('specs-input')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>Design specs</p>
+					</a>
+					<div class="measurements-box" id="specs-input" style="display: none">
+						<span><b>Min width:</b> 200px</span><br />
+						<span><b>Height:</b> 30px</span><br />
+						<span><b>Background color:</b> White</span><br />
+						<span><b>Border color:</b> Gray</span><br />
+						<span><b>Padding (Left & Right):</b> 10px</span><br />
+						<span><b>Margin:</b> 5px</span><br />
+						<span><b>Border radius:</b> 5px</span><br /><br />
+						<span><b>Placeholder</b></span><br />
+						<span><b>Font size:</b> 11px</span><br />
+						<span><b>Font color:</b> Gray</span>
+					</div>
+					<a onclick="myFunction('use-case-input')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>Use cases</p>
+					</a>
+					<div class="use-cases" id="use-case-input" style="display: none">
+						<ul>
+							<li>Everytime the user has to enter data (forms).</li>
+							<li>When data was entered but the user can still edit it (job titles).</li>
+						</ul>
+					</div>
+					<a onclick="myFunction('in-use-input')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>In use (example)</p>
+					</a>
+					<div id="in-use-input" style="display: none; padding: 20px">
+						<img src="imgs/input.png" />
+					</div>
+					<a onclick="myFunction('code-input')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>Code</p>
+					</a>
+					<div class="code-box" id="code-input" style="display: none">
+						<span>[Code]</span>
+					</div>
 			</div>
 
 			<h4>Number input</h4>
@@ -708,24 +957,46 @@
 				<i class="fa fa-sort fa-fw icon-inside-input" aria-hidden="true" style="font-size: 16px; top: 9px"></i>
 			</div>
 
-			<div class="measurements-box"><p style="padding-bottom: 20px;">
-				<span><b>Min width:</b> 200px</span><br />
-				<span><b>Height:</b> 30px</span><br />
-				<span><b>Background color:</b> White</span><br />
-				<span><b>Border color:</b> Gray</span><br />
-				<span><b>Padding (Left & Right):</b> 10px</span><br />
-				<span><b>Margin:</b> 5px</span><br />
-				<span><b>Border radius:</b> 5px</span><br />
-				<span><b>Icon:</b> sort</span><br />
-				<span><b>Icon size:</b> 16px</span><br />
-				<span><b>Icon color:</b> Interaction</span>
-			</div>
-
-			<div class="use-cases">
-				<h4>Use Cases</h4>
-				<ul>
-					<li>Everytime the user has to enter a number (amounts, prices, percentages).</li>
-				</ul>
+			<div class="details">
+					<a onclick="myFunction('specs-number-input')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>Design specs</p>
+					</a>
+					<div class="measurements-box" id="specs-number-input" style="display: none">
+						<span><b>Min width:</b> 200px</span><br />
+						<span><b>Height:</b> 30px</span><br />
+						<span><b>Background color:</b> White</span><br />
+						<span><b>Border color:</b> Gray</span><br />
+						<span><b>Padding (Left & Right):</b> 10px</span><br />
+						<span><b>Margin:</b> 5px</span><br />
+						<span><b>Border radius:</b> 5px</span><br />
+						<span><b>Icon:</b> sort</span><br />
+						<span><b>Icon size:</b> 16px</span><br />
+						<span><b>Icon color:</b> Interaction</span>
+					</div>
+					<a onclick="myFunction('use-case-number-input')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>Use cases</p>
+					</a>
+					<div class="use-cases" id="use-case-number-input" style="display: none">
+						<ul>
+							<li>Everytime the user has to enter a number (amounts, prices, percentages).</li>
+						</ul>
+					</div>
+					<a onclick="myFunction('in-use-number-input')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>In use (example)</p>
+					</a>
+					<div id="in-use-number-input" style="display: none; padding: 20px">
+						<img src="imgs/number.png" />
+					</div>
+					<a onclick="myFunction('code-number-input')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>Code</p>
+					</a>
+					<div class="code-box" id="code-number-input" style="display: none">
+						<span>[Code]</span>
+					</div>
 			</div>
 
 			<h4>Date input</h4>
@@ -734,24 +1005,46 @@
 				<i class="fa fa-calendar fa-fw icon-inside-input" aria-hidden="true" style="font-size: 16px; top: 8px"></i>
 			</div>
 
-			<div class="measurements-box"><p style="padding-bottom: 20px;">
-				<span><b>Min width:</b> 200px</span><br />
-				<span><b>Height:</b> 30px</span><br />
-				<span><b>Background color:</b> White</span><br />
-				<span><b>Border color:</b> Gray</span><br />
-				<span><b>Padding (Left & Right):</b> 10px</span><br />
-				<span><b>Margin:</b> 5px</span><br />
-				<span><b>Border radius:</b> 5px</span><br />
-				<span><b>Icon:</b> calendar</span><br />
-				<span><b>Icon size:</b> 16px</span><br />
-				<span><b>Icon color:</b> Interaction</span>
-			</div>
-
-			<div class="use-cases">
-				<h4>Use Cases</h4>
-				<ul>
-					<li>Everytime the user has to enter a date (time entry).</li>
-				</ul>
+			<div class="details">
+					<a onclick="myFunction('specs-date-input')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>Design specs</p>
+					</a>
+					<div class="measurements-box" id="specs-date-input" style="display: none">
+						<span><b>Min width:</b> 200px</span><br />
+						<span><b>Height:</b> 30px</span><br />
+						<span><b>Background color:</b> White</span><br />
+						<span><b>Border color:</b> Gray</span><br />
+						<span><b>Padding (Left & Right):</b> 10px</span><br />
+						<span><b>Margin:</b> 5px</span><br />
+						<span><b>Border radius:</b> 5px</span><br />
+						<span><b>Icon:</b> calendar</span><br />
+						<span><b>Icon size:</b> 16px</span><br />
+						<span><b>Icon color:</b> Interaction</span>
+					</div>
+					<a onclick="myFunction('use-case-date-input')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>Use cases</p>
+					</a>
+					<div class="use-cases" id="use-case-date-input" style="display: none">
+						<ul>
+							<li>Everytime the user has to enter a date (time entry).</li>
+						</ul>
+					</div>
+					<a onclick="myFunction('in-use-date-input')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>In use (example)</p>
+					</a>
+					<div id="in-use-date-input" style="display: none; padding: 20px">
+						<img src="imgs/date.png" />
+					</div>
+					<a onclick="myFunction('code-date-input')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>Code</p>
+					</a>
+					<div class="code-box" id="code-date-input" style="display: none">
+						<span>[Code]</span>
+					</div>
 			</div>
 
 			<h4>Time input</h4>
@@ -760,52 +1053,46 @@
 				<i class="fa fa-clock-o fa-fw icon-inside-input" aria-hidden="true" style="font-size: 16px; top: 9px"></i>
 			</div>
 
-			<div class="measurements-box"><p style="padding-bottom: 20px;">
-				<span><b>Min width:</b> 200px</span><br />
-				<span><b>Height:</b> 30px</span><br />
-				<span><b>Background color:</b> White</span><br />
-				<span><b>Border color:</b> Gray</span><br />
-				<span><b>Padding (Left & Right):</b> 10px</span><br />
-				<span><b>Margin:</b> 5px</span><br />
-				<span><b>Border radius:</b> 5px</span><br />
-				<span><b>Icon:</b> clock-o</span><br />
-				<span><b>Icon size:</b> 16px</span><br />
-				<span><b>Icon color:</b> Interaction</span>
-			</div>
-
-			<div class="use-cases">
-				<h4>Use Cases</h4>
-				<ul>
-					<li>Everytime the user has to enter a time (time entry).</li>
-				</ul>
-			</div>
-
-			<h4>Password input</h4>
-			<div style="margin: 20px 0px; position: relative; z-index: 2">
-				<input type="password">
-				<i class="fa fa-eye fa-fw icon-inside-input" aria-hidden="true" style="font-size: 16px; top: 9px"></i>
-			</div>
-
-			<p>The eye icon allow the user to check if the password is correct by showing the caracters.</p>
-
-			<div class="measurements-box"><p style="padding-bottom: 20px;">
-				<span><b>Min width:</b> 200px</span><br />
-				<span><b>Height:</b> 30px</span><br />
-				<span><b>Background color:</b> White</span><br />
-				<span><b>Border color:</b> Gray</span><br />
-				<span><b>Padding (Left & Right):</b> 10px</span><br />
-				<span><b>Margin:</b> 5px</span><br />
-				<span><b>Border radius:</b> 5px</span><br />
-				<span><b>Icon:</b> eye</span><br />
-				<span><b>Icon size:</b> 16px</span><br />
-				<span><b>Icon color:</b> Interaction</span>
-			</div>
-
-			<div class="use-cases">
-				<h4>Use Cases</h4>
-				<ul>
-					<li>Everytime the user has to enter a password (log in).</li>
-				</ul>
+			<div class="details">
+					<a onclick="myFunction('specs-time-input')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>Design specs</p>
+					</a>
+					<div class="measurements-box" id="specs-time-input" style="display: none">
+						<span><b>Min width:</b> 200px</span><br />
+						<span><b>Height:</b> 30px</span><br />
+						<span><b>Background color:</b> White</span><br />
+						<span><b>Border color:</b> Gray</span><br />
+						<span><b>Padding (Left & Right):</b> 10px</span><br />
+						<span><b>Margin:</b> 5px</span><br />
+						<span><b>Border radius:</b> 5px</span><br />
+						<span><b>Icon:</b> clock-o</span><br />
+						<span><b>Icon size:</b> 16px</span><br />
+						<span><b>Icon color:</b> Interaction</span>
+					</div>
+					<a onclick="myFunction('use-case-time-input')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>Use cases</p>
+					</a>
+					<div class="use-cases" id="use-case-time-input" style="display: none">
+						<ul>
+							<li>Everytime the user has to enter a time (time entry).</li>
+						</ul>
+					</div>
+					<a onclick="myFunction('in-use-time-input')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>In use (example)</p>
+					</a>
+					<div id="in-use-time-input" style="display: none; padding: 20px">
+						<img src="imgs/time.png" />
+					</div>
+					<a onclick="myFunction('code-time-input')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>Code</p>
+					</a>
+					<div class="code-box" id="code-time-input" style="display: none">
+						<span>[Code]</span>
+					</div>
 			</div>
 
 			<div style="margin-bottom: 80px"></div>
@@ -818,21 +1105,43 @@
 
 			<p><i>Textareas</i> are only used for more than one line of text.</p>
 
-			<div class="measurements-box"><p style="padding-bottom: 20px;">
-				<span><b>Width:</b> 400px</span><br />
-				<span><b>Height:</b> 100px</span><br />
-				<span><b>Background color:</b> White</span><br />
-				<span><b>Border color:</b> Gray</span><br />
-				<span><b>Padding (Left & Right):</b> 10px</span><br />
-				<span><b>Margin:</b> 0px 5px 15px 5px</span><br />
-				<span><b>Border radius:</b> 5px</span>
-			</div>
-
-			<div class="use-cases">
-				<h4>Use Cases</h4>
-				<ul>
-					<li>When the user can enter more than one line (notes, queries, sms, descriptions).</li>
-				</ul>
+			<div class="details">
+					<a onclick="myFunction('specs-textarea')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>Design specs</p>
+					</a>
+					<div class="measurements-box" id="specs-textarea" style="display: none">
+						<span><b>Width:</b> will depend on its container</span><br />
+						<span><b>Height:</b> 100px</span><br />
+						<span><b>Background color:</b> White</span><br />
+						<span><b>Border color:</b> Gray</span><br />
+						<span><b>Padding (Left & Right):</b> 10px</span><br />
+						<span><b>Margin:</b> 0px 5px 15px 5px</span><br />
+						<span><b>Border radius:</b> 5px</span>
+					</div>
+					<a onclick="myFunction('use-case-textarea')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>Use cases</p>
+					</a>
+					<div class="use-cases" id="use-case-textarea" style="display: none">
+						<ul>
+							<li>When the user can enter more than one line (notes, queries, sms, descriptions).</li>
+						</ul>
+					</div>
+					<a onclick="myFunction('in-use-textarea')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>In use (example)</p>
+					</a>
+					<div id="in-use-textarea" style="display: none; padding: 20px">
+						<img src="imgs/textarea.png" />
+					</div>
+					<a onclick="myFunction('code-textarea')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>Code</p>
+					</a>
+					<div class="code-box" id="code-textarea" style="display: none">
+						<span>[Code]</span>
+					</div>
 			</div>
 
 			<h4>Attachments</h4>
@@ -848,23 +1157,45 @@
 			<p>They may not look like an input but <i>attachments</i> are a way to eneter data too.<br />
 			Note that a primary outline button is used in this component.</p>
 
-			<div class="measurements-box"><p style="padding-bottom: 20px">
-				<span><b>Width:</b> 400px</span><br />
-				<span><b>Height:</b> 100px</span><br />
-				<span><b>Background color:</b> Cloud</span><br />
-				<span><b>Border color:</b> Celestial</span><br />
-				<span><b>Margin:</b> 10px</span><br />
-				<span><b>Border radius:</b> 5px</span><br />
-				<span><b>Font size:</b> 13px</span><br />
-				<span><b>Font color:</b> Text</span><br />
-				<span><b>Margin bottom (text):</b> 10px</span>
-			</div>
-
-			<div class="use-cases">
-				<h4>Use Cases</h4>
-				<ul>
-					<li>When diffenent types of files can be uploaded (photos, pdf, sheets).</li>
-				</ul>
+			<div class="details">
+					<a onclick="myFunction('specs-attachment')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>Design specs</p>
+					</a>
+					<div class="measurements-box" id="specs-attachment" style="display: none">
+						<span><b>Width:</b> 400px</span><br />
+						<span><b>Height:</b> 100px</span><br />
+						<span><b>Background color:</b> Cloud</span><br />
+						<span><b>Border color:</b> Celestial</span><br />
+						<span><b>Margin:</b> 10px</span><br />
+						<span><b>Border radius:</b> 5px</span><br />
+						<span><b>Font size:</b> 13px</span><br />
+						<span><b>Font color:</b> Text</span><br />
+						<span><b>Margin bottom (text):</b> 10px</span>
+					</div>
+					<a onclick="myFunction('use-case-attachment')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>Use cases</p>
+					</a>
+					<div class="use-cases" id="use-case-attachment" style="display: none">
+						<ul>
+							<li>When diffenent types of files can be uploaded (photos, pdf, sheets).</li>
+						</ul>
+					</div>
+					<a onclick="myFunction('in-use-attachment')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>In use (example)</p>
+					</a>
+					<div id="in-use-attachment" style="display: none; padding: 20px">
+						<img src="imgs/attachment.png" />
+					</div>
+					<a onclick="myFunction('code-attachment')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>Code</p>
+					</a>
+					<div class="code-box" id="code-attachment" style="display: none">
+						<span>[Code]</span>
+					</div>
 			</div>
 
 			<div style="margin-bottom: 80px"></div>
@@ -878,20 +1209,42 @@
 
 			<p>Note that left border radius of the button is 0px.</p>
 
-			<div class="measurements-box"><p style="padding-bottom: 20px">
-				<span><b>Width:</b> depending on context.</span><br />
-				<span><b>Height:</b> 30px</span><br />
-				<span><b>Margin:</b> 15px 5px</span><br />
-				<span><b>Padding left & right (input):</b> 10px</span><br />
-				<span><b>Border radius (input):</b> 5px</span><br />
-				<span><b>Border left radius (button):</b> 0px</span>
-			</div>
-
-			<div class="use-cases">
-				<h4>Use Cases</h4>
-				<ul>
-					<li>When buttons are related to the data that the user can enter (add line items, add log entry).</li>
-				</ul>
+			<div class="details">
+					<a onclick="myFunction('specs-inputbutton')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>Design specs</p>
+					</a>
+					<div class="measurements-box" id="specs-inputbutton" style="display: none">
+						<span><b>Width:</b> depending on context.</span><br />
+						<span><b>Height:</b> 30px</span><br />
+						<span><b>Margin:</b> 15px 5px</span><br />
+						<span><b>Padding left & right (input):</b> 10px</span><br />
+						<span><b>Border radius (input):</b> 5px</span><br />
+						<span><b>Border left radius (button):</b> 0px</span>
+					</div>
+					<a onclick="myFunction('use-case-inputbutton')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>Use cases</p>
+					</a>
+					<div class="use-cases" id="use-case-inputbutton" style="display: none">
+						<ul>
+							<li>When buttons are related to the data that the user can enter (add line items, add log entry).</li>
+						</ul>
+					</div>
+					<a onclick="myFunction('in-use-inputbutton')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>In use (example)</p>
+					</a>
+					<div id="in-use-inputbutton" style="display: none; padding: 20px">
+						<img src="imgs/inputbutton.png" />
+					</div>
+					<a onclick="myFunction('code-inputbutton')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>Code</p>
+					</a>
+					<div class="code-box" id="code-inputbutton" style="display: none">
+						<span>[Code]</span>
+					</div>
 			</div>
 
 			<h4>Input + Icon (after)</h4>
@@ -904,18 +1257,40 @@
 
 			<p>There are some cases in which an icon button can work better than a primary button.</p>
 
-			<div class="measurements-box"><p style="padding-bottom: 20px">
-				<span><b>Width:</b> depending on context.</span><br />
-				<span><b>Height:</b> 30px</span><br />
-				<span><b>Margin (between input and button):</b> 10px</span><br />
-				<span><b>Border radius:</b> 5px</span>
-			</div>
-
-			<div class="use-cases">
-				<h4>Use Cases</h4>
-				<ul>
-					<li>For those cases in which an icon can represent an action related to the input (customer contact details).</li>
-				</ul>
+			<div class="details">
+					<a onclick="myFunction('specs-inputicon')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>Design specs</p>
+					</a>
+					<div class="measurements-box" id="specs-inputicon" style="display: none">
+						<span><b>Width:</b> depending on context.</span><br />
+						<span><b>Height:</b> 30px</span><br />
+						<span><b>Margin (between input and button):</b> 10px</span><br />
+						<span><b>Border radius:</b> 5px</span>
+					</div>
+					<a onclick="myFunction('use-case-inputicon')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>Use cases</p>
+					</a>
+					<div class="use-cases" id="use-case-inputicon" style="display: none">
+						<ul>
+							<li>For those cases in which an icon can represent an action related to the input (customer contact details).</li>
+						</ul>
+					</div>
+					<a onclick="myFunction('in-use-inputicon')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>In use (example)</p>
+					</a>
+					<div id="in-use-inputicon" style="display: none; padding: 20px">
+						<img src="imgs/inputicon.png" />
+					</div>
+					<a onclick="myFunction('code-inputicon')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>Code</p>
+					</a>
+					<div class="code-box" id="code-inputicon" style="display: none">
+						<span>[Code]</span>
+					</div>
 			</div>
 
 			<h4>Ranges (Date & Time)</h4>
@@ -940,17 +1315,39 @@
 				</div>
 			</span>
 
-			<div class="measurements-box"><p style="padding-bottom: 20px">
-				<span><b>Width:</b> depending on context.</span><br />
-				<span><b>Height:</b> 30px</span><br />
-				<span><b>Margin (between Inputs):</b> 10px</span>
-			</div>
-
-			<div class="use-cases">
-				<h4>Use Cases</h4>
-				<ul>
-					<li>For those cases in which an icon can represent an action related to the input (add customer contact details).</li>
-				</ul>
+			<div class="details">
+					<a onclick="myFunction('specs-ranges')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>Design specs</p>
+					</a>
+					<div class="measurements-box" id="specs-ranges" style="display: none">
+						<span><b>Width:</b> depending on context.</span><br />
+						<span><b>Height:</b> 30px</span><br />
+						<span><b>Margin (between Inputs):</b> 10px</span>
+					</div>
+					<a onclick="myFunction('use-case-ranges')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>Use cases</p>
+					</a>
+					<div class="use-cases" id="use-case-ranges" style="display: none">
+						<ul>
+							<li>For those cases in which an icon can represent an action related to the input (add customer contact details).</li>
+						</ul>
+					</div>
+					<a onclick="myFunction('in-use-ranges')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>In use (example)</p>
+					</a>
+					<div id="in-use-ranges" style="display: none; padding: 20px">
+						<img src="imgs/ranges.png" />
+					</div>
+					<a onclick="myFunction('code-ranges')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>Code</p>
+					</a>
+					<div class="code-box" id="code-ranges" style="display: none">
+						<span>[Code]</span>
+					</div>
 			</div>
 
 			<h4>Label + Input</h4>
@@ -961,20 +1358,42 @@
 
 			<p><i>Labels</i> are another way of guiding the user regarding the information that must be entered.</p>
 
-			<div class="measurements-box"><p style="padding-bottom: 20px">
-				<span><b>Font size (Label):</b> 13px</span><br />
-				<span><b>Font weight (Label):</b> bold</span><br />
-				<span><b>Margin bottom (Label):</b> 5px</span><br />
-				<span><b>Width (Input):</b> depending on context</span><br />
-				<span><b>Height (Input):</b> 30px</span><br />
-				<span><b>Border radius (Input):</b> 5px</span>
-			</div>
-
-			<div class="use-cases">
-				<h4>Use Cases</h4>
-				<ul>
-					<li>Labels give context to the input (forms).</li>
-				</ul>
+			<div class="details">
+					<a onclick="myFunction('specs-label')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>Design specs</p>
+					</a>
+					<div class="measurements-box" id="specs-label" style="display: none">
+						<span><b>Font size (Label):</b> 13px</span><br />
+						<span><b>Font weight (Label):</b> bold</span><br />
+						<span><b>Margin bottom (Label):</b> 5px</span><br />
+						<span><b>Width (Input):</b> depending on context</span><br />
+						<span><b>Height (Input):</b> 30px</span><br />
+						<span><b>Border radius (Input):</b> 5px</span>
+					</div>
+					<a onclick="myFunction('use-case-label')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>Use cases</p>
+					</a>
+					<div class="use-cases" id="use-case-label" style="display: none">
+						<ul>
+							<li>Labels give context to the input (forms).</li>
+						</ul>
+					</div>
+					<a onclick="myFunction('in-use-label')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>In use (example)</p>
+					</a>
+					<div id="in-use-label" style="display: none; padding: 20px">
+						<img src="imgs/label.png" />
+					</div>
+					<a onclick="myFunction('code-label')">
+						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+						<p>Code</p>
+					</a>
+					<div class="code-box" id="code-label" style="display: none">
+						<span>[Code]</span>
+					</div>
 			</div>
 
 			<div style="margin-bottom: 80px"></div>
@@ -1004,34 +1423,56 @@
 				<i>Optional</i>, inputs that can be completed or not.<br />
 				<i>Disable</i> means that the input field is unable.</p>
 
-			<div class="measurements-box"><p style="padding-bottom: 20px">
-				<span><b>Font size (Label):</b> 13px</span><br />
-				<span><b>Font weight (Label):</b> bold</span><br />
-				<span><b>Margin bottom (Label):</b> 5px</span><br />
-				<span><b>Width (Input):</b> depending on context</span><br />
-				<span><b>Height (Input):</b> 30px</span><br />
-				<span><b>Border radius (Input):</b> 5px</span><br /><br />
-				<span><b>Required</b></span><br />
-				<span><b>Font size (label):</b> 11px</span><br />
-				<span><b>Font style (label):</b> italic</span><br />
-				<span><b>Font color (label):</b> Destructive</span><br /><br />
-				<span><b>Optional</b></span><br />
-				<span><b>Font size (label):</b> 11px</span><br />
-				<span><b>Font style (label):</b> italic</span><br />
-				<span><b>Font color (label):</b> Gray</span><br /><br />
-				<span><b>Disable</b></span><br />
-				<span><b>Background color (input):</b> Zero</span>
-			</div>
-
-			<div class="use-cases">
-				<h4>Use Cases</h4>
-				<ul>
-					<li><b>Active:</b> enable input.</li>
-					<li><b>Required:</b> mandatory input (forms).</li>
-					<li><b>Optional:</b> inputs can be completed or not (forms).</li>
-					<li><b>Disable:</b> unable input (forms).</li>
-				</ul>
-			</div>
+				<div class="details">
+						<a onclick="myFunction('specs-stateinput')">
+							<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+							<p>Design specs</p>
+						</a>
+						<div class="measurements-box" id="specs-stateinput" style="display: none">
+							<span><b>Font size (Label):</b> 13px</span><br />
+							<span><b>Font weight (Label):</b> bold</span><br />
+							<span><b>Margin bottom (Label):</b> 5px</span><br />
+							<span><b>Width (Input):</b> depending on context</span><br />
+							<span><b>Height (Input):</b> 30px</span><br />
+							<span><b>Border radius (Input):</b> 5px</span><br /><br />
+							<span><b>Required</b></span><br />
+							<span><b>Font size (label):</b> 11px</span><br />
+							<span><b>Font style (label):</b> italic</span><br />
+							<span><b>Font color (label):</b> Destructive</span><br /><br />
+							<span><b>Optional</b></span><br />
+							<span><b>Font size (label):</b> 11px</span><br />
+							<span><b>Font style (label):</b> italic</span><br />
+							<span><b>Font color (label):</b> Gray</span><br /><br />
+							<span><b>Disable</b></span><br />
+							<span><b>Background color (input):</b> Zero</span>
+						</div>
+						<a onclick="myFunction('use-case-stateinput')">
+							<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+							<p>Use cases</p>
+						</a>
+						<div class="use-cases" id="use-case-stateinput" style="display: none">
+							<ul>
+								<li><b>Active:</b> enable input.</li>
+								<li><b>Required:</b> mandatory input (forms).</li>
+								<li><b>Optional:</b> inputs can be completed or not (forms).</li>
+								<li><b>Disable:</b> unable input (forms).</li>
+							</ul>
+						</div>
+						<a onclick="myFunction('in-use-stateinput')">
+							<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+							<p>In use (example)</p>
+						</a>
+						<div id="in-use-stateinput" style="display: none; padding: 20px">
+							<img src="imgs/stateinput.png" />
+						</div>
+						<a onclick="myFunction('code-stateinput')">
+							<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+							<p>Code</p>
+						</a>
+						<div class="code-box" id="code-stateinput" style="display: none">
+							<span>[Code]</span>
+						</div>
+				</div>
 
 			<div style="margin-bottom: 80px"></div>
 			<h3>Help & Validation Feedback</h3>
@@ -1048,21 +1489,43 @@
 			<p>It is important to communicate to the user all those details that are not completely intuitive.<br />
 				<i>Help</i> should be clear, concise and as short as possible.</p>
 
-			<div class="measurements-box"><p style="padding-bottom: 20px">
-				<span><b>Font size (Help):</b> 11px</span><br />
-				<span><b>Font color (Help):</b> Text</span><br />
-				<span><b>Font style (Help):</b> italic</span><br />
-				<span><b>Icon:</b> info</span><br />
-				<span><b>Margin (between icon and text):</b> 5px</span><br />
-				<span><b>Margin (between input and help):</b> 5px</span>
-			</div>
-
-			<div class="use-cases">
-				<h4>Use Cases</h4>
-				<ul>
-					<li>Guide the user with specific details on how to fill the input (forms).</li>
-				</ul>
-			</div>
+				<div class="details">
+						<a onclick="myFunction('specs-help')">
+							<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+							<p>Design specs</p>
+						</a>
+						<div class="measurements-box" id="specs-help" style="display: none">
+							<span><b>Font size (Help):</b> 11px</span><br />
+							<span><b>Font color (Help):</b> Text</span><br />
+							<span><b>Font style (Help):</b> italic</span><br />
+							<span><b>Icon:</b> info</span><br />
+							<span><b>Margin (between icon and text):</b> 5px</span><br />
+							<span><b>Margin (between input and help):</b> 5px</span>
+						</div>
+						<a onclick="myFunction('use-case-help')">
+							<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+							<p>Use cases</p>
+						</a>
+						<div class="use-cases" id="use-case-help" style="display: none">
+							<ul>
+								<li>Guide the user with specific details on how to fill the input (forms).</li>
+							</ul>
+						</div>
+						<a onclick="myFunction('in-use-help')">
+							<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+							<p>In use (example)</p>
+						</a>
+						<div id="in-use-help" style="display: none; padding: 20px">
+							<img src="imgs/help.png" />
+						</div>
+						<a onclick="myFunction('code-help')">
+							<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+							<p>Code</p>
+						</a>
+						<div class="code-box" id="code-help" style="display: none">
+							<span>[Code]</span>
+						</div>
+				</div>
 
 			<h4>Validation Feedback</h4>
 			<div style="margin: 20px 5px; position: relative; z-index: 2">
@@ -1079,28 +1542,50 @@
 				When the user enters incorrect information, it is necessary to clearly communicate what was wrong in a<br />
 				clear and friendly way.</p>
 
-			<div class="measurements-box"><p style="padding-bottom: 20px">
-				<span><b>Font size (Help):</b> 11px</span><br />
-				<span><b>Font color (Help):</b> Destructive</span><br />
-				<span><b>Font style (Help):</b> italic</span><br /><br />
-				<span><b>Correct</b></span><br />
-				<span><b>Icon</b> check-circle</span><br />
-				<span><b>Icon size</b> 16px</span><br />
-				<span><b>Icon color</b> Success</span><br /><br />
-				<span><b>Incorrect</b></span><br />
-				<span><b>Icon</b> times-circle</span><br />
-				<span><b>Icon size</b> 16px</span><br />
-				<span><b>Icon color</b> Destructive</span>
-				<span><b>Margin (between icon and text):</b> 5px</span><br />
-				<span><b>Margin (between input and help):</b> 5px</span>
-			</div>
-
-			<div class="use-cases">
-				<h4>Use Cases</h4>
-				<ul>
-					<li>Help the user know if the data entered is right or wrong (forms).</li>
-				</ul>
-			</div>
+				<div class="details">
+						<a onclick="myFunction('specs-validation')">
+							<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+							<p>Design specs</p>
+						</a>
+						<div class="measurements-box" id="specs-validation" style="display: none">
+							<span><b>Font size (Help):</b> 11px</span><br />
+							<span><b>Font color (Help):</b> Destructive</span><br />
+							<span><b>Font style (Help):</b> italic</span><br /><br />
+							<span><b>Correct</b></span><br />
+							<span><b>Icon</b> check-circle</span><br />
+							<span><b>Icon size</b> 16px</span><br />
+							<span><b>Icon color</b> Success</span><br /><br />
+							<span><b>Incorrect</b></span><br />
+							<span><b>Icon</b> times-circle</span><br />
+							<span><b>Icon size</b> 16px</span><br />
+							<span><b>Icon color</b> Destructive</span>
+							<span><b>Margin (between icon and text):</b> 5px</span><br />
+							<span><b>Margin (between input and help):</b> 5px</span>
+						</div>
+						<a onclick="myFunction('use-case-validation')">
+							<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+							<p>Use cases</p>
+						</a>
+						<div class="use-cases" id="use-case-validation" style="display: none">
+							<ul>
+								<li>Help the user know if the data entered is right or wrong (forms).</li>
+							</ul>
+						</div>
+						<a onclick="myFunction('in-use-validation')">
+							<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+							<p>In use (example)</p>
+						</a>
+						<div id="in-use-validation" style="display: none; padding: 20px">
+							<img src="imgs/validation.png" />
+						</div>
+						<a onclick="myFunction('code-validation')">
+							<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+							<p>Code</p>
+						</a>
+						<div class="code-box" id="code-validation" style="display: none">
+							<span>[Code]</span>
+						</div>
+				</div>
 
 			<div style="margin-bottom: 80px;"></div>
 			<hr>
@@ -1121,26 +1606,48 @@
 
 				<p>Forms must be concise and only one column so the user does not feel overwhelm.</p>
 
-				<div class="measurements-box"><p style="padding-bottom: 20px">
-					<span><b>Max width (form):</b> 400px</span><br />
-					<span><b>Height (form):</b> will depend on the content</span><br /><br />
-					<span><b>Header</b></span><br />
-					<span><b>Size:</b> H2</span><br />
-					<span><b>Color:</b> Interaction</span><br />
-					<span><b>Padding bottom:</b> 5px</span><br />
-					<span><b>Border bottom:</b> 1px solid #0074B8</span><br />
-					<span><b>Margin bottom:</b> 20px</span><br /><br />
-					<span><b>Subsection</b></span><br />
-					<span><b>Size:</b> H3</span><br />
-					<span><b>Color:</b> Text</span><br />
-					<span><b>Margin bottom:</b> 20px</span>
-				</div>
-
-				<div class="use-cases">
-					<h4>Use Cases</h4>
-					<ul>
-						<li>When the user has to enter related data in big amounts (create job, customer).</li>
-					</ul>
+				<div class="details">
+						<a onclick="myFunction('specs-form')">
+							<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+							<p>Design specs</p>
+						</a>
+						<div class="measurements-box" id="specs-form" style="display: none">
+							<span><b>Max width (form):</b> 400px</span><br />
+							<span><b>Height (form):</b> will depend on the content</span><br /><br />
+							<span><b>Header</b></span><br />
+							<span><b>Size:</b> H2</span><br />
+							<span><b>Color:</b> Interaction</span><br />
+							<span><b>Padding bottom:</b> 5px</span><br />
+							<span><b>Border bottom:</b> 1px solid #0074B8</span><br />
+							<span><b>Margin bottom:</b> 20px</span><br /><br />
+							<span><b>Subsection</b></span><br />
+							<span><b>Size:</b> H3</span><br />
+							<span><b>Color:</b> Text</span><br />
+							<span><b>Margin bottom:</b> 20px</span>
+						</div>
+						<a onclick="myFunction('use-case-form')">
+							<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+							<p>Use cases</p>
+						</a>
+						<div class="use-cases" id="use-case-form" style="display: none">
+							<ul>
+								<li>When the user has to enter related data in big amounts (create job, customer).</li>
+							</ul>
+						</div>
+						<a onclick="myFunction('in-use-form')">
+							<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+							<p>In use (example)</p>
+						</a>
+						<div id="in-use-form" style="display: none; padding: 20px">
+							<img src="imgs/form.png" />
+						</div>
+						<a onclick="myFunction('code-form')">
+							<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+							<p>Code</p>
+						</a>
+						<div class="code-box" id="code-form" style="display: none">
+							<span>[Code]</span>
+						</div>
 				</div>
 
 				<div style="margin-bottom: 80px;"></div>
@@ -1160,18 +1667,40 @@
 				<p><i>Search</i> input will help the user find specific data.<br />
 				Placeholder should be informative: the user needs to know what type of data he/she can look for.</p>
 
-				<div class="measurements-box"><p style="padding-bottom: 20px">
-					<span><b>Min width:</b> 200px</span><br />
-					<span><b>Height:</b> 30px</span><br />
-					<span><b>Border radius:</b> 5px<br />
-					<span><b>Icon:</b> search</span>
-				</div>
-
-				<div class="use-cases">
-					<h4>Use Cases</h4>
-					<ul>
-						<li>When the user wants to find specific information in a certain context (home page, customer list).</li>
-					</ul>
+				<div class="details">
+						<a onclick="myFunction('specs-search')">
+							<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+							<p>Design specs</p>
+						</a>
+						<div class="measurements-box" id="specs-search" style="display: none">
+							<span><b>Min width:</b> 200px</span><br />
+							<span><b>Height:</b> 30px</span><br />
+							<span><b>Border radius:</b> 5px<br />
+							<span><b>Icon:</b> search</span>
+						</div>
+						<a onclick="myFunction('use-case-search')">
+							<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+							<p>Use cases</p>
+						</a>
+						<div class="use-cases" id="use-case-search" style="display: none">
+							<ul>
+								<li>When the user wants to find specific information in a certain context (home page, customer list).</li>
+							</ul>
+						</div>
+						<a onclick="myFunction('in-use-search')">
+							<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+							<p>In use (example)</p>
+						</a>
+						<div id="in-use-search" style="display: none; padding: 20px">
+							<img src="imgs/search.png" />
+						</div>
+						<a onclick="myFunction('code-search')">
+							<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+							<p>Code</p>
+						</a>
+						<div class="code-box" id="code-search" style="display: none">
+							<span>[Code]</span>
+						</div>
 				</div>
 
 				<h4>Filter</h4>
@@ -1184,21 +1713,43 @@
 				<p><i>Filter</i> input will help the user filter specific data within a given context.<br />
 				Placeholder should be informative: the user needs to know what type of data he/she can look for.</p>
 
-				<div class="measurements-box"><p style="padding-bottom: 20px">
-					<span><b>Min width:</b> 200px</span><br />
-					<span><b>Height:</b> 30px</span><br />
-					<span><b>Border radius:</b> 5px</span><br />
-					<span><b>Icon:</b> filter</span><br />
-					<span><b>Margin (between input and dropdown):</b> 3px</span><br />
-					<span><b>Background color (hover - dropdown):</b> Cloud</span>
-				</div>
-
-				<div class="use-cases">
-					<h4>Use Cases</h4>
-					<ul>
-						<li>When the user wants to see only specific information within a great amount of data (tables, lists).</li>
-						<li>To select specific data (assign site visit).</li>
-					</ul>
+				<div class="details">
+						<a onclick="myFunction('specs-filter')">
+							<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+							<p>Design specs</p>
+						</a>
+						<div class="measurements-box" id="specs-filter" style="display: none">
+							<span><b>Min width:</b> 200px</span><br />
+							<span><b>Height:</b> 30px</span><br />
+							<span><b>Border radius:</b> 5px</span><br />
+							<span><b>Icon:</b> filter</span><br />
+							<span><b>Margin (between input and dropdown):</b> 3px</span><br />
+							<span><b>Background color (hover - dropdown):</b> Cloud</span>
+						</div>
+						<a onclick="myFunction('use-case-filter')">
+							<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+							<p>Use cases</p>
+						</a>
+						<div class="use-cases" id="use-case-filter" style="display: none">
+							<ul>
+								<li>When the user wants to see only specific information within a great amount of data (tables, lists).</li>
+								<li>To select specific data (assign site visit).</li>
+							</ul>
+						</div>
+						<a onclick="myFunction('in-use-filter')">
+							<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+							<p>In use (example)</p>
+						</a>
+						<div id="in-use-filter" style="display: none; padding: 20px">
+							<img src="imgs/filter.png" />
+						</div>
+						<a onclick="myFunction('code-filter')">
+							<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+							<p>Code</p>
+						</a>
+						<div class="code-box" id="code-filter" style="display: none">
+							<span>[Code]</span>
+						</div>
 				</div>
 
 				<h3>States</h3>
@@ -1227,20 +1778,42 @@
 					that the search/filter action is being processed.<br />
 					Note that there are no disabled states in search/filter inputs.</p>
 
-				<div class="measurements-box"><p style="padding-bottom: 20px">
-					<span><b>Loading</b></span><br />
-					<span><b>Icon:</b> spinner</span><br />
-					<span><b>Animation (icon):</b> fa-spin</span><br />
-					<span><b>Margin right (Icon):</b> 5px</span>
-				</div>
-
-				<div class="use-cases">
-					<h4>Use Cases</h4>
-					<ul>
-						<li><b>Active:</b> enable input (home page).</li>
-						<li><b>Loading:</b> while processing the search/filter (home page).</li>
-					</ul>
-				</div>
+					<div class="details">
+							<a onclick="myFunction('specs-statesf')">
+								<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+								<p>Design specs</p>
+							</a>
+							<div class="measurements-box" id="specs-statesf" style="display: none">
+								<span><b>Loading</b></span><br />
+								<span><b>Icon:</b> spinner</span><br />
+								<span><b>Animation (icon):</b> fa-spin</span><br />
+								<span><b>Margin right (Icon):</b> 5px</span>
+							</div>
+							<a onclick="myFunction('use-case-statesf')">
+								<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+								<p>Use cases</p>
+							</a>
+							<div class="use-cases" id="use-case-statesf" style="display: none">
+								<ul>
+									<li><b>Active:</b> enable input (home page).</li>
+									<li><b>Loading:</b> while processing the search/filter (home page).</li>
+								</ul>
+							</div>
+							<a onclick="myFunction('in-use-statesf')">
+								<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+								<p>In use (example)</p>
+							</a>
+							<div id="in-use-statesf" style="display: none; padding: 20px">
+								<img src="imgs/statesf.png" />
+							</div>
+							<a onclick="myFunction('code-statesf')">
+								<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+								<p>Code</p>
+							</a>
+							<div class="code-box" id="code-statesf" style="display: none">
+								<span>[Code]</span>
+							</div>
+					</div>
 
 				<div style="margin-bottom: 80px;"></div>
 				<hr>
@@ -1264,24 +1837,46 @@
 
 						<p style="margin-top: 20px"><i>Tooltips</i> can be placed on the left, top, bottom or right depending on the context.</p>
 
-						<div class="measurements-box"><p style="padding-bottom: 20px">
-							<span><b>Icon:</b> info-circle</span><br />
-							<span><b>Margin (Icon):</b> 5px</span><br />
-							<span><b>Max width (tooltip):</b> 200px</span><br />
-							<span><b>Height (tooltip):</b> Depending on the information displayed</span><br />
-							<span><b>Background color (tooltip):</b> Text</span><br />
-							<span><b>Padding (tooltip):</b> 10px 5px</span><br />
-							<span><b>Margin (tooltip from icon):</b> 5px</span><br />
-							<span><b>Font size (tooltip):</b> 11px</span><br />
-							<span><b>Font color (tooltip):</b> White</span>
-						</div>
-
-						<div class="use-cases">
-							<h4>Use Cases</h4>
-							<ul>
-								<li>To guide users in the use of specific components (home page).</li>
-								<li>To explain users about some complex concepts (home page).</li>
-							</ul>
+						<div class="details">
+								<a onclick="myFunction('specs-tooltips')">
+									<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+									<p>Design specs</p>
+								</a>
+								<div class="measurements-box" id="specs-tooltips" style="display: none">
+									<span><b>Icon:</b> info-circle</span><br />
+									<span><b>Margin (Icon):</b> 5px</span><br />
+									<span><b>Max width (tooltip):</b> 200px</span><br />
+									<span><b>Height (tooltip):</b> Depending on the information displayed</span><br />
+									<span><b>Background color (tooltip):</b> Text</span><br />
+									<span><b>Padding (tooltip):</b> 10px 5px</span><br />
+									<span><b>Margin (tooltip from icon):</b> 5px</span><br />
+									<span><b>Font size (tooltip):</b> 11px</span><br />
+									<span><b>Font color (tooltip):</b> White</span>
+								</div>
+								<a onclick="myFunction('use-case-tooltips')">
+									<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+									<p>Use cases</p>
+								</a>
+								<div class="use-cases" id="use-case-tooltips" style="display: none">
+									<ul>
+										<li>To guide users in the use of specific components (home page).</li>
+										<li>To explain users about some complex concepts (home page).</li>
+									</ul>
+								</div>
+								<a onclick="myFunction('in-use-tooltips')">
+									<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+									<p>In use (example)</p>
+								</a>
+								<div id="in-use-tooltips" style="display: none; padding: 20px">
+									<img src="imgs/tooltips.png" />
+								</div>
+								<a onclick="myFunction('code-tooltips')">
+									<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+									<p>Code</p>
+								</a>
+								<div class="code-box" id="code-tooltips" style="display: none">
+									<span>[Code]</span>
+								</div>
 						</div>
 
 						<div style="margin-bottom: 80px;"></div>
@@ -1299,25 +1894,47 @@
 								<span class="tag other-tags">Other tags</span>
 							</div>
 
-							<div class="measurements-box"><p style="padding-bottom: 20px">
-								<span><b>Width:</b> Depending on the text</span><br />
-								<span><b>Padding:</b> 3px 10px</span><br />
-								<span><b>Margin:</b> 5px</span><br />
-								<span><b>Border radius:</b> 50px</span><br />
-								<span><b>Font size:</b> 11px</span><br />
-								<span><b>Font color:</b> White</span><br />
-								<span><b>Background color (All good):</b> STATUS-G</span><br />
-								<span><b>Background color (Attention):</b> STATUS-Y</span><br />
-								<span><b>Background color (Warning):</b> STATUS-O</span><br />
-								<span><b>Background color (Not done):</b> STATUS-R</span><br />
-								<span><b>Background color (Other tags):</b> STATUS-Gray</span><br />
-							</div>
-
-							<div class="use-cases">
-								<h4>Use Cases</h4>
-								<ul>
-									<li>To provide a notion of how things are working (job card, site visit, quotes, invoices).</li>
-								</ul>
+							<div class="details">
+									<a onclick="myFunction('specs-tag')">
+										<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+										<p>Design specs</p>
+									</a>
+									<div class="measurements-box" id="specs-tag" style="display: none">
+										<span><b>Width:</b> Depending on the text</span><br />
+										<span><b>Padding:</b> 3px 10px</span><br />
+										<span><b>Margin:</b> 5px</span><br />
+										<span><b>Border radius:</b> 50px</span><br />
+										<span><b>Font size:</b> 11px</span><br />
+										<span><b>Font color:</b> White</span><br />
+										<span><b>Background color (All good):</b> STATUS-G</span><br />
+										<span><b>Background color (Attention):</b> STATUS-Y</span><br />
+										<span><b>Background color (Warning):</b> STATUS-O</span><br />
+										<span><b>Background color (Not done):</b> STATUS-R</span><br />
+										<span><b>Background color (Other tags):</b> STATUS-Gray</span><br />
+									</div>
+									<a onclick="myFunction('use-case-tag')">
+										<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+										<p>Use cases</p>
+									</a>
+									<div class="use-cases" id="use-case-tag" style="display: none">
+										<ul>
+											<li>To provide a notion of how things are working (job card, site visit, quotes, invoices).</li>
+										</ul>
+									</div>
+									<a onclick="myFunction('in-use-tag')">
+										<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+										<p>In use (example)</p>
+									</a>
+									<div id="in-use-tag" style="display: none; padding: 20px">
+										<img src="imgs/tag.png" />
+									</div>
+									<a onclick="myFunction('code-tag')">
+										<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+										<p>Code</p>
+									</a>
+									<div class="code-box" id="code-tag" style="display: none">
+										<span>[Code]</span>
+									</div>
 							</div>
 
 							<div style="margin-bottom: 80px;"></div>
@@ -1355,26 +1972,48 @@
 								The content in the right side will depend enterely on the use case. Same as the ellipsis icon.<br />
 								If there is secondary information or files to be displayed, the card can be expanded to show it.</p>
 
-								<div class="measurements-box"><p style="padding-bottom: 20px">
-									<span><b>Width:</b> 970px</span><br />
-									<span><b>Height (close):</b> 140px</span><br />
-									<span><b>Height (open):</b> 265px</span><br />
-									<span><b>Margin:</b> 10px</span><br />
-									<span><b>Border radius:</b> 5px</span><br />
-									<span><b>Meta data size:</b> 13px</span><br />
-									<span><b>Meta data color:</b> Celestial</span><br />
-									<span><b>Title size:</b> H2</span><br />
-									<span><b>Title color:</b> Text</span><br />
-									<span><b>Description size:</b> 13px</span><br />
-									<span><b>Description color:</b> Text</span><br />
-									<span><b>Right section size (width):</b> 28px</span>
-								</div>
-
-								<div class="use-cases">
-									<h4>Use Cases</h4>
-									<ul>
-										<li>To show related information all together (sign off, certificates, hazards).</li>
-									</ul>
+								<div class="details">
+										<a onclick="myFunction('specs-card')">
+											<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+											<p>Design specs</p>
+										</a>
+										<div class="measurements-box" id="specs-card" style="display: none">
+											<span><b>Width:</b> 970px</span><br />
+											<span><b>Height (close):</b> 140px</span><br />
+											<span><b>Height (open):</b> 265px</span><br />
+											<span><b>Margin:</b> 10px</span><br />
+											<span><b>Border radius:</b> 5px</span><br />
+											<span><b>Meta data size:</b> 13px</span><br />
+											<span><b>Meta data color:</b> Celestial</span><br />
+											<span><b>Title size:</b> H2</span><br />
+											<span><b>Title color:</b> Text</span><br />
+											<span><b>Description size:</b> 13px</span><br />
+											<span><b>Description color:</b> Text</span><br />
+											<span><b>Right section size (width):</b> 28px</span>
+										</div>
+										<a onclick="myFunction('use-case-card')">
+											<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+											<p>Use cases</p>
+										</a>
+										<div class="use-cases" id="use-case-card" style="display: none">
+											<ul>
+												<li>To show related information all together (sign off, certificates, hazards).</li>
+											</ul>
+										</div>
+										<a onclick="myFunction('in-use-card')">
+											<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+											<p>In use (example)</p>
+										</a>
+										<div id="in-use-card" style="display: none; padding: 20px">
+											<img src="imgs/card.png" />
+										</div>
+										<a onclick="myFunction('code-card')">
+											<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+											<p>Code</p>
+										</a>
+										<div class="code-box" id="code-card" style="display: none">
+											<span>[Code]</span>
+										</div>
 								</div>
 
 							<div style="margin-bottom: 80px;"></div>
@@ -1434,30 +2073,52 @@
 								of the container, a scroll bar will be displayed.<br />
 								Footer: contains a neutral and primary button right aligned.</p>
 
-								<div class="measurements-box"><p style="padding-bottom: 20px">
-									<span><b>Margin top:</b> 80px</span><br />
-									<span><b>Height:</b> will depend on its content.</span><br />
-									<span><b>Max height:</b> 80% of viewport</span><br />
-									<span><b>Background color:</b> White</span><br />
-									<span><b>Shadow:</b> 0px 1px 2px #373737</span><br />
-									<span><b>Font size (title/text):</b> 19px/13px</span><br />
-									<span><b>Padding:</b> 15px</span><br />
-									<span><b>Icon:</b> times</span><br />
-									<span><b>Align:</b> center</span><br /><br />
-									<span><b>Big modal</b></span><br />
-									<span><b>Size (width):</b> 1000px</span><br /><br />
-									<span><b>Medium modal</b></span><br />
-									<span><b>Size (width):</b> 750px</span><br /><br />
-									<span><b>Small modal</b></span><br />
-									<span><b>Size (width):</b> 500px</span><br />
-								</div>
-
-								<div class="use-cases">
-									<h4>Use Cases</h4>
-									<ul>
-										<li>When something should deviate from the current flow (create site visit, new job, hazard, invoice).</li>
-										<li>To ask/prevent the user of some action (delete, void).</li>
-									</ul>
+								<div class="details">
+										<a onclick="myFunction('specs-modal')">
+											<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+											<p>Design specs</p>
+										</a>
+										<div class="measurements-box" id="specs-modal" style="display: none">
+											<span><b>Margin top:</b> 80px</span><br />
+											<span><b>Height:</b> will depend on its content.</span><br />
+											<span><b>Max height:</b> 80% of viewport</span><br />
+											<span><b>Background color:</b> White</span><br />
+											<span><b>Shadow:</b> 0px 1px 2px #373737</span><br />
+											<span><b>Font size (title/text):</b> 19px/13px</span><br />
+											<span><b>Padding:</b> 15px</span><br />
+											<span><b>Icon:</b> times</span><br />
+											<span><b>Align:</b> center</span><br /><br />
+											<span><b>Big modal</b></span><br />
+											<span><b>Size (width):</b> 1000px</span><br /><br />
+											<span><b>Medium modal</b></span><br />
+											<span><b>Size (width):</b> 750px</span><br /><br />
+											<span><b>Small modal</b></span><br />
+											<span><b>Size (width):</b> 500px</span><br />
+										</div>
+										<a onclick="myFunction('use-case-modal')">
+											<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+											<p>Use cases</p>
+										</a>
+										<div class="use-cases" id="use-case-modal" style="display: none">
+											<ul>
+												<li>When something should deviate from the current flow (create site visit, new job, hazard, invoice).</li>
+												<li>To ask/prevent the user of some action (delete, void).</li>
+											</ul>
+										</div>
+										<a onclick="myFunction('in-use-modal')">
+											<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+											<p>In use (example)</p>
+										</a>
+										<div id="in-use-modal" style="display: none; padding: 20px">
+											<img src="imgs/modal.png" />
+										</div>
+										<a onclick="myFunction('code-modal')">
+											<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+											<p>Code</p>
+										</a>
+										<div class="code-box" id="code-modal" style="display: none">
+											<span>[Code]</span>
+										</div>
 								</div>
 
 							<div style="margin-bottom: 80px;"></div>
@@ -1486,18 +2147,40 @@
 
 								<p>This component is mostly used with tables and lists.</p>
 
-								<div class="measurements-box"><p style="padding-bottom: 20px">
-									<span><b>Margin (between Back/Next and pages numbers):</b> 20px</span><br />
-									<span><b>Padding (selected page):</b> 5px 10px</span><br />
-									<span><b>Background color (selected page):</b> Interaction</span><br />
-									<span><b>Icons:</b> chevron-left & chevron-right</span>
-								</div>
-
-								<div class="use-cases">
-									<h4>Use Cases</h4>
-									<ul>
-										<li>To give the user the possibility of navigate through pages (tables, lists).</li>
-									</ul>
+								<div class="details">
+										<a onclick="myFunction('specs-pagination')">
+											<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+											<p>Design specs</p>
+										</a>
+										<div class="measurements-box" id="specs-pagination" style="display: none">
+											<span><b>Margin (between Back/Next and pages numbers):</b> 20px</span><br />
+											<span><b>Padding (selected page):</b> 5px 10px</span><br />
+											<span><b>Background color (selected page):</b> Interaction</span><br />
+											<span><b>Icons:</b> chevron-left & chevron-right</span>
+										</div>
+										<a onclick="myFunction('use-case-pagination')">
+											<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+											<p>Use cases</p>
+										</a>
+										<div class="use-cases" id="use-case-pagination" style="display: none">
+											<ul>
+												<li>To give the user the possibility of navigate through pages (tables, lists).</li>
+											</ul>
+										</div>
+										<a onclick="myFunction('in-use-pagination')">
+											<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+											<p>In use (example)</p>
+										</a>
+										<div id="in-use-pagination" style="display: none; padding: 20px">
+											<img src="imgs/pagination.png" />
+										</div>
+										<a onclick="myFunction('code-pagination')">
+											<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+											<p>Code</p>
+										</a>
+										<div class="code-box" id="code-pagination" style="display: none">
+											<span>[Code]</span>
+										</div>
 								</div>
 
 								<div style="margin-bottom: 80px;"></div>
@@ -1539,24 +2222,46 @@
 										<i>Error</i> messages will inform the user that something is not right and how to preceed to solve it.<br /><br />
 										Messages should use a friendly tone, be clear and concise.</p>
 
-									<div class="measurements-box"><p style="padding-bottom: 20px">
-										<span><b>Width:</b> will be the width of its parent component</span><br />
-										<span><b>Height:</b> 38px</span><br />
-										<span><b>Icon size:</b> fa-2x</span><br />
-										<span><b>Icon padding:</b> 0px 15px</span><br />
-										<span><b>Icons:</b> info-circle, check-circle, exclamation-triangle and times-circle</span><br />
-										<span><b>Colors:</b> Interaction, Success, Warning and Destruction in its 10% opcaity</span><br />
-									</div>
-
-									<div class="use-cases">
-										<h4>Use Cases</h4>
-										<ul>
-											<li><b>Information:</b> to help or guide the user (invoices will be sent from this address).</li>
-											<li><b>Success:</b> when something goes right ().</li>
-											<li><b>Warning:</b> when something it is not completely right but can be solve easily (currently connected to Quickbooks instead of Xero).</li>
-											<li><b>Error:</b> when something is not going as expected (archive all attached jobs and cannot be undone).</li>
-										</ul>
-									</div>
+										<div class="details">
+												<a onclick="myFunction('specs-message')">
+													<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+													<p>Design specs</p>
+												</a>
+												<div class="measurements-box" id="specs-message" style="display: none">
+													<span><b>Width:</b> will be the width of its parent component</span><br />
+													<span><b>Height:</b> 38px</span><br />
+													<span><b>Icon size:</b> fa-2x</span><br />
+													<span><b>Icon padding:</b> 0px 15px</span><br />
+													<span><b>Icons:</b> info-circle, check-circle, exclamation-triangle and times-circle</span><br />
+													<span><b>Colors:</b> Interaction, Success, Warning and Destruction in its 10% opcaity</span><br />
+												</div>
+												<a onclick="myFunction('use-case-message')">
+													<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+													<p>Use cases</p>
+												</a>
+												<div class="use-cases" id="use-case-message" style="display: none">
+													<ul>
+														<li><b>Information:</b> to help or guide the user (invoices will be sent from this address).</li>
+														<li><b>Success:</b> when something goes right ().</li>
+														<li><b>Warning:</b> when something it is not completely right but can be solve easily (currently connected to Quickbooks instead of Xero).</li>
+														<li><b>Error:</b> when something is not going as expected (archive all attached jobs and cannot be undone).</li>
+													</ul>
+												</div>
+												<a onclick="myFunction('in-use-message')">
+													<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+													<p>In use (example)</p>
+												</a>
+												<div id="in-use-message" style="display: none; padding: 20px">
+													<img src="imgs/message.png" />
+												</div>
+												<a onclick="myFunction('code-message')">
+													<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+													<p>Code</p>
+												</a>
+												<div class="code-box" id="code-message" style="display: none">
+													<span>[Code]</span>
+												</div>
+										</div>
 
 
 
