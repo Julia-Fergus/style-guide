@@ -39,8 +39,7 @@ function myFunction(target) {
 					<h2 style="text-align: right; margin-bottom: 5px"><a style="color: white; text-decoration: none" href="index.html">Fergus Style Guide</a></h2>
 
 					<h4 style="color: #0074B8; text-align: right">Version 1.0</h4>
-
-				</header>
+ 				</header>
 
 				<nav id="mainnav">
 	  				<ul>
@@ -289,13 +288,19 @@ function myFunction(target) {
 						<span><b>Background color:</b> Interaction</span><br />
 						<span><b>Font color:</b> White</span><br />
 						<span><b>Font size:</b> 13px</span><br />
-						<span><b>Font style:</b> bold</span><br /><br />
+						<span><b>Font style:</b> bold</span><br />
+						<span><b>Background color (on hover):</b> #025F95</span><br />
+						<span><b>Shadow (on hover):</b> 0px 0px 3px #888888</span><br />
+						<span><b>Shadow (pressed):</b> inset 0px 1px 2px #373737</span><br /><br />
 						<span><b>Neutral button</b></span><br />
 						<span><b>Background color:</b> Zero</span><br />
 						<span><b>Border color:</b> Fog</span><br />
 						<span><b>Font color:</b> Text</span><br />
 						<span><b>Font size:</b> 13px</span><br />
-						<span><b>Font style:</b> regular</span><br /><br />
+						<span><b>Font style:</b> regular</span><br />
+						<span><b>Background color (on hover):</b> #E1E1E8</span><br />
+						<span><b>Shadow (on hover):</b> 0px 0px 3px #888888</span><br />
+						<span><b>Shadow (pressed):</b> inset 0px 1px 2px #373737</span><br /><br />
 						<span><b>Link button</b></span><br />
 						<span><b>Font color:</b> Interaction</span><br />
 						<span><b>Font size:</b> 13px</span><br />
@@ -304,7 +309,10 @@ function myFunction(target) {
 						<span><b>Background color:</b> Destruction</span><br />
 						<span><b>Font color:</b> White</span><br />
 						<span><b>Font size:</b> 13px</span><br />
-						<span><b>Font style:</b> regular</span>
+						<span><b>Font style:</b> regular</span><br />
+						<span><b>Background color (on hover):</b> #B21900</span><br />
+						<span><b>Shadow (on hover):</b> 0px 0px 3px #888888</span><br />
+						<span><b>Shadow (pressed):</b> inset 0px 1px 2px #373737</span><br /><br />
 					</div>
 					<a onclick="myFunction('use-case-buttons')">
 						<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
@@ -1748,6 +1756,80 @@ function myFunction(target) {
 							<p>Code</p>
 						</a>
 						<div class="code-box" id="code-filter" style="display: none">
+							<span>[Code]</span>
+						</div>
+				</div>
+
+				<h4>Tag input</h4>
+				<div style="margin: 20px 0px" class="taginputcomponent">
+					<div class="taginputcontainer">
+						<div class="taginputx">
+							<i class="fa fa-times fa-fw" aria-hidden="true"></i>
+						</div>
+						<div class="taginput">
+							<p>Tag name</p>
+						</div>
+					</div>
+					<div class="taginputcontainer">
+						<div class="taginputx">
+							<i class="fa fa-times fa-fw" aria-hidden="true"></i>
+						</div>
+						<div class="taginput">
+							<div class="circle"></div>
+							<p>Name Lastname</p>
+						</div>
+					</div>
+					<i class="fa fa-caret-down fa-fw taginputicon" aria-hidden="true"></i>
+				</div>
+				<img src="imgs/taginputdd.png" style="margin-bottom: 20px" />
+
+				<p><i>Tag input</i> is other representation of filters.</p>
+
+				<div class="details">
+						<a onclick="myFunction('specs-taginput')">
+							<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+							<p>Design specs</p>
+						</a>
+						<div class="measurements-box" id="specs-taginput" style="display: none">
+							<span><b>Width:</b> will depend on content</span><br />
+							<span><b>Height:</b> 20px</span><br />
+							<span><b>Background color:</b> Baby</span><br />
+							<span><b>Font size:</b> 11px</span><br />
+							<span><b>Font color:</b> Text</span><br /><br />
+							<span><b>Button</b></span><br />
+							<span><b>Border radius:</b>5px 0px 0px 5px</span><br />
+							<span><b>Icon:</b> times</span><br />
+							<span><b>Padding (left & right):</b> 5px</span><br />
+							<span><b>Background color (on hover):</b> #B0D1F4</span><br />
+							<span><b>Shadow (on hover):</b> 0px 0px 3px #888888</span><br />
+							<span><b>Shadow (pressed):</b> inset 0px 1px 2px #373737</span><br /><br />
+							<span><b>Tag</b></span><br />
+							<span><b>Border radius:</b> 0px 5px 5px 0px</span><br />
+							<span><b>Padding (left & right):</b> 5px</span><br />
+							<span><b>Margin right (between avatar and text):</b> 5px</span><br />
+							<span><b>Avatar size:</b> 15px</span>
+						</div>
+						<a onclick="myFunction('use-case-taginput')">
+							<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+							<p>Use cases</p>
+						</a>
+						<div class="use-cases" id="use-case-taginput" style="display: none">
+							<ul>
+								<li>When the user wants to filter by specific entities (home page, reports).</li>
+							</ul>
+						</div>
+						<a onclick="myFunction('in-use-taginput')">
+							<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+							<p>In use (example)</p>
+						</a>
+						<div id="in-use-taginput" style="display: none; padding: 20px">
+							<img src="imgs/taginput.png" />
+						</div>
+						<a onclick="myFunction('code-taginput')">
+							<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+							<p>Code</p>
+						</a>
+						<div class="code-box" id="code-taginput" style="display: none">
 							<span>[Code]</span>
 						</div>
 				</div>

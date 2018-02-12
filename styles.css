@@ -1109,6 +1109,83 @@ input:focus, input[type=text]:focus, input[type=time]:focus, input[type=date]:fo
 	background-color: #5C5E6C;
 }
 
+.taginputcomponent{
+	display: flex;
+	flex-direction: row;
+	border: 1px solid #5C5E6C;
+	height: 30px;
+	padding-left: 5px;
+	border-radius: 5px;
+	width: 395px;
+	position: relative;
+}
+
+.taginputcontainer{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	color: #373737;
+	margin-right: 5px;
+}
+
+.taginputx{
+	height: 20px;
+	padding: 0px 5px;
+	background-color: #CBE1F8;
+	border-radius: 5px 0px 0px 5px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	cursor: pointer;
+}
+
+.taginputx:hover{
+	box-shadow: 0px 0px 3px #888888;
+	background-color: #B0D1F4;
+}
+
+.taginputx:active{
+	box-shadow: inset 0px 1px 2px #373737;
+	background-color: #CBE1F8;
+}
+
+.taginput{
+	height: 20px;
+	padding: 0px 5px;
+	background-color: #CBE1F8;
+	align-self: center;
+	font-size: 13px;
+	border-radius: 0px 5px 5px 0px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.taginput p{
+	margin-bottom: 0px;
+	font-size: 11px;
+}
+
+.taginput i{
+	font-size: 16px;
+}
+
+.taginputicon{
+	font-size: 16px !important;
+	color: #0074B8;
+	position: absolute;
+	right: 10px;
+	top: 7px;
+}
+
+.circle{
+	width: 15px;
+	height: 15px;
+	background-color: #417505;
+	border-radius: 50px;
+	margin-right: 5px;
+}
+
 .pagination{
 	color: #373737;
 	margin: 5px 15px;
