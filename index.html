@@ -43,6 +43,8 @@ function myFunction(target) {
 
 				<nav id="mainnav">
 	  				<ul>
+							<li><a href="#introanchor">Introduction</a></li>
+							<li><a href="#principlesanchor">Design principles</a></li>
 							<li><a href="#coloranchor">Color</a></li>
 							<li><a href="#typeanchor">Typography</a></li>
 							<li><a href="#buttonanchor">Buttons</a></li>
@@ -64,10 +66,37 @@ function myFunction(target) {
 			<section id="content">
 
 	    <article>
+				<div id="introanchor">
+					<h2 style="margin-bottom: 20px;"><a id="introanchor" style="text-decoration:none; color:#373737;">Introduction</a></h2>
+					<p>
+						Designers and developers have something in common: they build user interfaces. Usually designers are the ones in charge of creating them<br />
+						and developers the ones that make a UI real and functional. This means that both teams work collaboratively.<br /><br />
+						The look and feel of a product is always important to help users recognize each part of it as a whole, this is called consistency. A style<br />
+						guide will ensure consistent UIs because it provides complete and specific guidelines to achieve it. It is also a reference and a place of<br />
+						shared concepts between teams inside a company.<br /><br />
+						This deliverable will help developers save time and effort. They are going to reuse code and avoid bugs everywhere because they only have to<br />
+						update in one place (Don’t repeat yourself - principle of software development). On the other hand, they will invest effort in building new and<br />
+						complex features without worrying on coding each component from scratch.<br /><br />
+						For designers, they are also going to save time because having all the components already designed in one place will give them the freedom to<br />
+						create new designs faster.<br /><br />
+						The Fergus Design Team believes that products are made to be used and that a great user experience is provided mainly through the user interface.<br />
+						UIs are the connection with our users and we want to give them a smart software for growing they trade businesses.
+					</p>
+				</div>
+
+				<div style="margin-bottom: 80px;"></div>
+				<hr>
+				<div style="margin-bottom: 80px;"></div>
+
+				<div id="introanchor">
+					<h2 style="margin-bottom: 20px;"><a id="principlesanchor" style="text-decoration:none; color:#373737;">Design Principles</a></h2>
+				</div>
+
+				<div style="margin-bottom: 80px;"></div>
+				<hr>
+				<div style="margin-bottom: 80px;"></div>
 
 			<h2 style="margin-bottom: 20px;"><a id="coloranchor" style="text-decoration:none; color:#373737;">Color</a></h2>
-				<div class="article-info">Posted on <time datetime="2011-09-13">14 May</time> by <a href="#" rel="author">Armando</a></div>
-
 
 							<h1 style="font-size: 1.5em; font-weight: 500; margin-top: 25px; color: #373737;">Interface</h1>
 							<div class="colorcard1" style="display: inline-block;">
@@ -231,6 +260,11 @@ function myFunction(target) {
 					<p class="h2" style="color: #0074B8; display: inline-block;">Small</p><span style="display: inline-block; margin-left: 70px;"><p class="text-small2">Helvetica Regular</p></span>
 					<p class="btext" style="margin-left: 120px;">Size: 11px&emsp;Line Height: 16</p>
 
+					<div style="margin-bottom: 70px;"></div>
+
+					<p class="h2" style="color: #0074B8; display: inline-block;">Small 1</p><span style="display: inline-block; margin-left: 56px;"><p class="text-small2">Helvetica Regular</p></span>
+					<p class="btext" style="margin-left: 120px;">Size: 12px&emsp;Line Height: 16</p>
+
 				</div>
 
 				<div class="details">
@@ -247,8 +281,8 @@ function myFunction(target) {
 						<li><b>H3:</b> Titles inside sections.</li>
 						<li><b>H4:</b> Highlight plain text.</li>
 						<li><b>Body:</b> Plain text.</li>
-						<li><b>Small:</b> Texts inside tags, placeholders and small spaces.<br />
-							Also for cases in which 13px need to be compromise for some reason.</li>
+						<li><b>Small:</b> Texts inside tags, placeholders and small spaces. Also for cases in which 13px need to be compromise for some reason.</li>
+						<li><b>Small 1:</b> For some cases in which 11px is too small.</li>
 					</ul>
 				</div>
 
@@ -2163,6 +2197,7 @@ function myFunction(target) {
 										<div class="measurements-box" id="specs-modal" style="display: none">
 											<span><b>Margin top:</b> 80px</span><br />
 											<span><b>Height:</b> will depend on its content.</span><br />
+											<span><b>Min height:</b> 640px (for complex and/or long modals)</span><br />
 											<span><b>Max height:</b> 80% of viewport</span><br />
 											<span><b>Background color:</b> White</span><br />
 											<span><b>Shadow:</b> 0px 1px 2px #373737</span><br />
