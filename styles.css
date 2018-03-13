@@ -44,12 +44,30 @@
 	padding-left: 10px;
 	padding-top: 7px;
 	font-weight: 700;
-	line-height: 19px;
 }
 .color-card-text2 {
 	color: #55606A;
 	font-weight: 300;
-	line-height: 19px;
+}
+
+.shadecard{
+	width: 150px;
+	padding: 50px 0px 10px 0px;
+}
+
+.shadecard p{
+	padding-top: 0px;
+	margin: 0px;
+}
+
+.shade{
+	width: 150px;
+	padding: 5px 0px;
+}
+
+.shade p{
+	padding-left: 10px;
+	margin: 0px;
 }
 
 
