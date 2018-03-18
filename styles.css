@@ -896,7 +896,7 @@ input:checked + .slider:before {
 .ltooltip .tooltiptext {
 		visibility: hidden;
 		width: 120px;
-		background-color: #373737;
+		background-color: #5C5E6C;
 		color: #fff;
 		text-align: center;
 		border-radius: 6px;
@@ -916,7 +916,7 @@ input:checked + .slider:before {
 		margin-top: -5px;
 		border-width: 5px;
 		border-style: solid;
-		border-color: transparent transparent transparent #373737;
+		border-color: transparent transparent transparent #5C5E6C;
 }
 .ltooltip:hover .tooltiptext {
     visibility: visible;
@@ -930,7 +930,7 @@ input:checked + .slider:before {
 .ttooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
-    background-color: #373737;
+    background-color: #5C5E6C;
     color: #fff;
     text-align: center;
     border-radius: 6px;
@@ -950,7 +950,7 @@ input:checked + .slider:before {
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: #373737 transparent transparent transparent;
+    border-color: #5C5E6C transparent transparent transparent;
 }
 
 .ttooltip:hover .tooltiptext {
@@ -965,7 +965,7 @@ input:checked + .slider:before {
 .btooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
-    background-color: #373737;
+    background-color: #5C5E6C;
     color: #fff;
     text-align: center;
     border-radius: 6px;
@@ -985,7 +985,7 @@ input:checked + .slider:before {
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: transparent transparent #373737 transparent;
+    border-color: transparent transparent #5C5E6C transparent;
 }
 
 .btooltip:hover .tooltiptext {
@@ -1000,7 +1000,7 @@ input:checked + .slider:before {
 .rtooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
-    background-color: #373737;
+    background-color: #5C5E6C;
     color: #fff;
     text-align: center;
     border-radius: 6px;
@@ -1020,7 +1020,7 @@ input:checked + .slider:before {
     margin-top: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: transparent #373737 transparent transparent;
+    border-color: transparent #5C5E6C transparent transparent;
 }
 .rtooltip:hover .tooltiptext {
     visibility: visible;
