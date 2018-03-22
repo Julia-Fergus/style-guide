@@ -184,7 +184,7 @@ fieldset form input, fieldset form select, fieldset form textarea {
 fieldset form input.formbutton {
 border:none;
     background-color: #80B763;
-    border-radius: 5px;
+    border-radius: 4px;
     color: #FFFFFF;
     display: inline-block;
     font-weight: bold;
@@ -461,14 +461,14 @@ footer p a:hover { color:#333; border-bottom-color: #333; }
 
 .button{
 	padding: 8.5px 15px;
-	border-radius: 5px;
+	border-radius: 4px;
 	cursor: pointer;
-	margin: 15px 5px;
+	margin: 8px;
 	user-select: none;
 }
 
 .button i{
-	margin-right: 5px;
+	margin-right: 8px;
 }
 
 .primary-button{
@@ -479,16 +479,16 @@ footer p a:hover { color:#333; border-bottom-color: #333; }
 
 .primary-button:hover{
 	box-shadow: 0px 0px 3px #888888;
-	background-color: #025F95;
+	background-color: #005586;
 }
 
 .primary-button:active{
-	background-color: #0074B8;
+	background-color: #005586;
 	box-shadow: inset 0px 1px 2px #373737;
 }
 
 .primary-button-disabled{
-	background-color: #B2D6EA;
+	background-color: #73B3D8;
 	color: #ffffff;
 	font-weight: bold;
 	pointer-events: none
@@ -496,17 +496,20 @@ footer p a:hover { color:#333; border-bottom-color: #333; }
 
 .neutral-button{
 	background-color: #F5F5F7;
+	border-color: #F5F5F7;
 	color: #373737;
 	border: 1px solid #D7DFE1;
 }
 
 .neutral-button:hover{
 	box-shadow: 0px 0px 3px #888888;
-	background-color: #E1E1E8;
+	background-color: #B3B3B4;
+	border-color: #B3B3B4;
 }
 
 .neutral-button:active{
-	background-color: #F5F5F7;
+	background-color: #B3B3B4;
+	border-color: #B3B3B4;
 	box-shadow: inset 0px 1px 2px #373737;
 }
 
@@ -524,16 +527,16 @@ footer p a:hover { color:#333; border-bottom-color: #333; }
 
 .destructive-button:hover{
 	box-shadow: 0px 0px 3px #888888;
-	background-color: #B21900;
+	background-color: #952600;
 }
 
 .destructive-button:active{
-	background-color: #CC3300;
+	background-color: #952600;
 	box-shadow: inset 0px 1px 2px #373737;
 }
 
 .destructive-button-disabled{
-	background-color: #F0C2B2;
+	background-color: #E38F73;
 	color: #ffffff;
 	pointer-events: none
 }
@@ -547,7 +550,7 @@ footer p a:hover { color:#333; border-bottom-color: #333; }
 }
 
 .button-link-disabled{
-	color: #B2D6EA;
+	color: #73B3D8;
 	font-size: 13px;
 	margin: 5px 15px;
 	pointer-events: none
@@ -559,7 +562,7 @@ footer p a:hover { color:#333; border-bottom-color: #333; }
 }
 
  .button-link-disabled:hover{
-	 color: #B2D6EA;
+	 color: #73B3D8;
 	 text-decoration: underline;
  }
 
@@ -581,9 +584,9 @@ footer p a:hover { color:#333; border-bottom-color: #333; }
 }
 
 .button-small{
-	padding: 3.5px 15px;
-	margin: 15px 5px;
-	border-radius: 5px;
+	padding: 4.5px 15px;
+	margin: 8px;
+	border-radius: 4px;
 	cursor: pointer;
 	user-select: none;
 }
@@ -597,7 +600,7 @@ footer p a:hover { color:#333; border-bottom-color: #333; }
 }
 
 .primary-button-small{
-	font-size: 11px;
+	font-size: 12px;
 }
 
 .button-outline{
@@ -605,12 +608,12 @@ footer p a:hover { color:#333; border-bottom-color: #333; }
 	padding: 7.5px 15px;
 	background-color: #ffffff;
 	cursor: pointer;
-	margin: 15px 5px;
+	margin: 8px;
 	user-select: none;
 }
 
 .button-outline i{
-	margin-right: 5px;
+	margin-right: 8px;
 }
 
 .button-outline:hover{
@@ -630,7 +633,7 @@ footer p a:hover { color:#333; border-bottom-color: #333; }
 
 .button-outline-small{
 	border-radius: 5px;
-	padding: 3.5px 15px;
+	padding: 4.5px 15px;
 	background-color: #ffffff;
 	cursor: pointer;
 	margin: 15px 5px;
@@ -677,8 +680,10 @@ footer p a:hover { color:#333; border-bottom-color: #333; }
     display: table;
     position: relative;
 		font-size: 13px;
-    padding-left: 30px;
-		margin-bottom: 10px;
+		vertical-align: middle;
+		padding-left: 35px;
+    padding-top: 5px;
+		margin-bottom: 12px;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -696,8 +701,8 @@ footer p a:hover { color:#333; border-bottom-color: #333; }
     position: absolute;
     top: 0;
     left: 0;
-    height: 15px;
-    width: 15px;
+    height: 24px;
+    width: 24px;
     background-color: #ffffff;
 		border: 1px solid #595959;
     border-radius: 50%;
@@ -719,10 +724,10 @@ footer p a:hover { color:#333; border-bottom-color: #333; }
 }
 
 .container .checkmark:after {
- 	top: 5px;
-	left: 5px;
-	width: 5px;
-	height: 5px;
+ 	top: 7px;
+	left: 7px;
+	width: 9px;
+	height: 9px;
 	border-radius: 50%;
 	background: white;
 }
@@ -732,6 +737,7 @@ footer p a:hover { color:#333; border-bottom-color: #333; }
   display: block;
   position: relative;
   padding-left: 35px;
+	padding-top: 5px;
   margin-bottom: 12px;
   cursor: pointer;
   font-size: 13px;
@@ -751,8 +757,8 @@ footer p a:hover { color:#333; border-bottom-color: #333; }
   position: absolute;
   top: 0;
   left: 0;
-  height: 15px;
-  width: 15px;
+  height: 24px;
+  width: 24px;
   background-color: #ffffff;
 	border: 1px solid #595959;
 	border-radius: 5px;
@@ -778,10 +784,10 @@ footer p a:hover { color:#333; border-bottom-color: #333; }
 }
 
 .containerC .checkmarkC:after {
-  left: 5px;
-  top: 2px;
-  width: 2px;
-  height: 7px;
+  left: 8px;
+  top: 4px;
+  width: 5px;
+  height: 10px;
   border: solid white;
   border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
@@ -815,10 +821,10 @@ footer p a:hover { color:#333; border-bottom-color: #333; }
 .slider:before {
   position: absolute;
   content: "";
-  height: 22px;
-  width: 22px;
+  height: 18px;
+  width: 18px;
   left: 0px;
-  bottom: 0px;
+  bottom: 2px;
   background-color: #ffffff;
   -webkit-transition: .4s;
   transition: .4s;
@@ -899,7 +905,7 @@ input:checked + .slider:before {
 		background-color: #5C5E6C;
 		color: #fff;
 		text-align: center;
-		border-radius: 6px;
+		border-radius: 4px;
 		padding: 15px 10px;
 		position: absolute;
 		z-index: 1;
@@ -1027,8 +1033,8 @@ input:checked + .slider:before {
 }
 
 input[type=text], input[type=number], input[type=date], input[type=time], input[type=password], textarea{
-	height: 30px;
-	width: 190px;
+	height: 32px;
+	width: 192px;
 	border: 1px solid #5C5E6C;
 	border-radius: 5px;
 	background-color: #ffffff;
@@ -1046,7 +1052,6 @@ input:focus, input[type=text]:focus, input[type=time]:focus, input[type=date]:fo
 ::placeholder{
 	color: #5C5E6C;
 	font-size: 11px;
-	font-style: italic;
 }
 
 .icon-inside-input{
@@ -1061,8 +1066,8 @@ input:focus, input[type=text]:focus, input[type=time]:focus, input[type=date]:fo
 	border: 1px solid #75A7C8;
 	background-color: #E9F4FB;
 	width: 400px;
-	height: 100px;
-	border-radius: 5px;
+	height: 80px;
+	border-radius: 4px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -1078,7 +1083,6 @@ input:focus, input[type=text]:focus, input[type=time]:focus, input[type=date]:fo
 .required-input{
 	color: #CC3300;
 	font-size: 11px;
-	font-style: italic;
 }
 
 .optional-input{
@@ -1089,22 +1093,20 @@ input:focus, input[type=text]:focus, input[type=time]:focus, input[type=date]:fo
 .help-input{
 	font-size: 11px;
 	margin-left: 5px;
-	font-style: italic;
 }
 
 .validation-wrong-input{
 	font-size: 11px;
-	font-style: italic;
 	margin-left: 5px;
 	color: #CC3300;
 }
 
-.tag{
+.badges{
 	border-radius: 50px;
 	color: #ffffff;
-	font-size: 11px;
+	font-size: 12px;
 	padding: 3px 10px;
-	margin: 5px;
+	margin: 8px;
 }
 
 .all-good{
@@ -1220,9 +1222,10 @@ input:focus, input[type=text]:focus, input[type=time]:focus, input[type=date]:fo
 
 .message{
 	border-radius: 5px;
-	height: 38px;
+	height: 32px;
 	width: 600px;
-	font-size: 13px;
+	font-size: 14px;
+	color: #373737;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -1230,26 +1233,39 @@ input:focus, input[type=text]:focus, input[type=time]:focus, input[type=date]:fo
 
 .message i{
 	margin: 0px 15px;
+	font-size: 20px;
 }
 
 .information{
+	background-color: #CCE3F1;
+}
+
+.information i{
 	color: #0074B8;
-	background-color: rgba(0, 116, 184, 0.1);
 }
 
 .success{
+	background-color: #E0EDCC;
+}
+
+.success i{
 	color: #009632;
-	background-color: rgba(0, 150, 50, 0.1);
 }
 
 .warning-m{
+	background-color: #F8E5CC;
+}
+
+.warning-m i{
 	color: #DD7D00;
-	background-color: rgba(221, 125, 0, 0.1);
 }
 
 .error{
+	background-color: #F5D6CC;
+}
+
+.error i{
 	color: #CC3300;
-	background-color: rgba(204, 51, 0, 0.1);
 }
 
 .card-container{
@@ -1324,7 +1340,7 @@ input:focus, input[type=text]:focus, input[type=time]:focus, input[type=date]:fo
 }
 
 .modal-container{
-	width: 1000px;
+	width: 1008px;
 	height: 750px;
 	background-color: #ffffff;
 	border-radius: 5px;
@@ -1341,14 +1357,14 @@ input:focus, input[type=text]:focus, input[type=time]:focus, input[type=date]:fo
 }
 
 .header-modal h2{
-	font-size: 19px;
-	margin-left: 15px;
-	margin-top: 15px;
+	font-size: 20px;
+	margin-left: 12px;
+	margin-top: 12px;
 }
 
 .header-modal i{
-	margin-right: 15px;
-	margin-top: 15px;
+	margin-right: 12px;
+	margin-top: 12px;
 }
 
 .footer-modal{
@@ -1356,11 +1372,11 @@ input:focus, input[type=text]:focus, input[type=time]:focus, input[type=date]:fo
 	flex-direction: row;
 	justify-content: flex-end;
 	border-top: 1px solid #D7DFE1;
-	padding-right: 15px;
+	padding-right: 12px;
 }
 
 .modal-container-small{
-	width: 500px;
+	width: 512px;
 	height: 300px;
 	background-color: #ffffff;
 	border-radius: 5px;
@@ -1377,14 +1393,14 @@ input:focus, input[type=text]:focus, input[type=time]:focus, input[type=date]:fo
 }
 
 .header-modal-small h2{
-	font-size: 19px;
-	margin-left: 15px;
-	margin-top: 15px;
+	font-size: 20px;
+	margin-left: 12px;
+	margin-top: 12px;
 }
 
 .header-modal-small i{
-	margin-right: 15px;
-	margin-top: 15px;
+	margin-right: 12px;
+	margin-top: 12px;
 }
 
 .footer-modal-small{
@@ -1392,11 +1408,11 @@ input:focus, input[type=text]:focus, input[type=time]:focus, input[type=date]:fo
 	flex-direction: row;
 	justify-content: flex-end;
 	border-top: 1px solid #D7DFE1;
-	padding-right: 15px;
+	padding-right: 12px;
 }
 
 .modal-container-medium{
-	width: 750px;
+	width: 744px;
 	height: 500px;
 	background-color: #ffffff;
 	border-radius: 5px;
@@ -1413,14 +1429,14 @@ input:focus, input[type=text]:focus, input[type=time]:focus, input[type=date]:fo
 }
 
 .header-modal-medium h2{
-	font-size: 19px;
-	margin-left: 15px;
-	margin-top: 15px;
+	font-size: 20px;
+	margin-left: 12px;
+	margin-top: 12px;
 }
 
 .header-modal-medium i{
-	margin-right: 15px;
-	margin-top: 15px;
+	margin-right: 12px;
+	margin-top: 12px;
 }
 
 .footer-modal-medium{
@@ -1428,7 +1444,7 @@ input:focus, input[type=text]:focus, input[type=time]:focus, input[type=date]:fo
 	flex-direction: row;
 	justify-content: flex-end;
 	border-top: 1px solid #D7DFE1;
-	padding-right: 15px;
+	padding-right: 12px;
 }
 
 .form h2{
