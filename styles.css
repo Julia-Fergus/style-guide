@@ -1051,7 +1051,7 @@ input:focus, input[type=text]:focus, input[type=time]:focus, input[type=date]:fo
 
 ::placeholder{
 	color: #5C5E6C;
-	font-size: 11px;
+	font-size: 12px;
 }
 
 .icon-inside-input{
@@ -1091,12 +1091,12 @@ input:focus, input[type=text]:focus, input[type=time]:focus, input[type=date]:fo
 }
 
 .help-input{
-	font-size: 11px;
+	font-size: 12px;
 	margin-left: 5px;
 }
 
 .validation-wrong-input{
-	font-size: 11px;
+	font-size: 12px;
 	margin-left: 5px;
 	color: #CC3300;
 }
@@ -1183,7 +1183,7 @@ input:focus, input[type=text]:focus, input[type=time]:focus, input[type=date]:fo
 
 .taginput p{
 	margin-bottom: 0px;
-	font-size: 11px;
+	font-size: 12px;
 }
 
 .taginput i{
@@ -1296,7 +1296,7 @@ input:focus, input[type=text]:focus, input[type=time]:focus, input[type=date]:fo
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: baseline;
-	margin-bottom: 30px;
+	margin-bottom: 40px;
 }
 
 .card-content span p{
