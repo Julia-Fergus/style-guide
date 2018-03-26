@@ -496,7 +496,7 @@ footer p a:hover { color:#333; border-bottom-color: #333; }
 
 .neutral-button{
 	background-color: #F5F5F7;
-	border-color: #F5F5F7;
+	border-color: #9DA3A4;
 	color: #373737;
 	border: 1px solid #D7DFE1;
 }
@@ -704,7 +704,7 @@ footer p a:hover { color:#333; border-bottom-color: #333; }
     height: 24px;
     width: 24px;
     background-color: #ffffff;
-		border: 1px solid #595959;
+		border: 1px solid #CCCDD1;
     border-radius: 50%;
 }
 
@@ -760,7 +760,7 @@ footer p a:hover { color:#333; border-bottom-color: #333; }
   height: 24px;
   width: 24px;
   background-color: #ffffff;
-	border: 1px solid #595959;
+	border: 1px solid #CCCDD1;
 	border-radius: 5px;
 }
 
@@ -812,8 +812,8 @@ footer p a:hover { color:#333; border-bottom-color: #333; }
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #D7DFE1;
-	border: 1px solid #595959;
+  background-color: #CCCDD1;
+	border: 1px solid #CCCDD1;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -1035,7 +1035,7 @@ input:checked + .slider:before {
 input[type=text], input[type=number], input[type=date], input[type=time], input[type=password], textarea{
 	height: 32px;
 	width: 192px;
-	border: 1px solid #5C5E6C;
+	border: 1px solid #CCCDD1;
 	border-radius: 5px;
 	background-color: #ffffff;
 	padding-left: 10px;
@@ -1132,7 +1132,7 @@ input:focus, input[type=text]:focus, input[type=time]:focus, input[type=date]:fo
 .taginputcomponent{
 	display: flex;
 	flex-direction: row;
-	border: 1px solid #5C5E6C;
+	border: 1px solid #CCCDD1;
 	height: 30px;
 	padding-left: 5px;
 	border-radius: 5px;
@@ -1270,7 +1270,7 @@ input:focus, input[type=text]:focus, input[type=time]:focus, input[type=date]:fo
 
 .card-container{
 	background-color: #ffffff;
-	border: 1px solid #D7DFE1;
+	border: 1px solid #CCCDD1;
 	border-radius: 5px;
 	width: 970px;
 	height: 140px;
@@ -1312,7 +1312,7 @@ input:focus, input[type=text]:focus, input[type=time]:focus, input[type=date]:fo
 
 .card-actions{
 	width: 180px;
-	border-left: 1px solid #D7DFE1;
+	border-left: 1px solid #CCCDD1;
 	display: flex;
 	flex-direction: column;
 	padding: 15px 10px;
@@ -1324,7 +1324,7 @@ input:focus, input[type=text]:focus, input[type=time]:focus, input[type=date]:fo
 	justify-content: center;
 	align-items: baseline;
 	background-color: #ffffff;
-	border: 1px solid #D7DFE1;
+	border: 1px solid #CCCDD1;
 	border-radius: 50px;
 	width: 120px;
 	height: 20px;
@@ -1448,7 +1448,8 @@ input:focus, input[type=text]:focus, input[type=time]:focus, input[type=date]:fo
 }
 
 .form h2{
-	font-size: 19px;
+	font-size: 20px;
+	line-height: 26px;
 	color: #0074B8;
 	border-bottom: 2px solid #0074B8;
 	padding-bottom: 5px;
@@ -1457,6 +1458,7 @@ input:focus, input[type=text]:focus, input[type=time]:focus, input[type=date]:fo
 
 .form h3{
 	font-size: 16px;
+	line-height: 21px;
 	color: #373737;
 }
 
