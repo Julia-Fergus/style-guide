@@ -799,7 +799,7 @@ footer p a:hover { color:#333; border-bottom-color: #333; }
 .switch {
   position: relative;
   display: inline-block;
-  width: 40px;
+  width: 50px;
   height: 24px;
 }
 
@@ -823,7 +823,7 @@ footer p a:hover { color:#333; border-bottom-color: #333; }
   content: "";
   height: 18px;
   width: 18px;
-  left: 0px;
+  left: 2px;
   bottom: 2px;
   background-color: #ffffff;
   -webkit-transition: .4s;
@@ -840,9 +840,9 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(20px);
-  -ms-transform: translateX(20px);
-  transform: translateX(20px);
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
 }
 
 .slider.round {
