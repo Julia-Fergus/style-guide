@@ -50,11 +50,12 @@ function myFunction(target) {
 							<li><a href="#formanchor">Form</a></li>
 							<li><a href="#searchanchor">Search</a></li>
 							<li><a href="#tooltipanchor">Tooltips</a></li>
-							<li><a href="#taganchor">Tags</a></li>
+							<li><a href="#taganchor">Badges</a></li>
 							<li><a href="#cardanchor">Cards</a></li>
 							<li><a href="#modalanchor">Modals</a></li>
 							<li><a href="#paginationanchor">Pagination</a></li>
 							<li><a href="#messageanchor">Messages</a></li>
+							<li><a href="#headeranchor">Header</a></li>
 	            </ul>
 				</nav>
 
@@ -2625,6 +2626,68 @@ function myFunction(target) {
 													<p>Code</p>
 												</a>
 												<div class="code-box" id="code-message" style="display: none">
+													<span>[Code]</span>
+												</div>
+										</div>
+
+								<div style="margin-bottom: 80px;"></div>
+								<hr>
+								<div style="margin-bottom: 80px;"></div>
+
+								<h2><a id="headeranchor" style="text-decoration:none; color:#373737">Header</a></h3>
+									<h3 style="opacity: 0.5">Headers define sections in a page.</h2>
+
+									<div style="margin: 20px 0px">
+										<div class="header">
+											<h3>Header title</h3>
+											<span class="button-small primary-button primary-button-small">Button</span>
+										</div><br />
+										<div class="header">
+											<div>
+												<i class="fa fa-chevron-right" aria-hidden="true"></i>
+												<h3>Header title</h3>
+											</div>
+										</div>
+									</div>
+
+										<div class="details">
+												<a onclick="myFunction('specs-header')">
+													<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+													<p>Design specs</p>
+												</a>
+												<div class="measurements-box" id="specs-header" style="display: none">
+													<span><b>Width:</b> will be the width of its parent component</span><br />
+													<span><b>Height:</b> 32px</span><br />
+													<span><b>Padding (Left & Right):</b> 12px</span><br />
+													<span><b>Background color:</b> Cloud</span><br />
+													<span><b>Icon size:</b> 14px</span><br />
+													<span><b>Icon padding:</b> 8px (to the right)</span><br />
+													<span><b>Icon:</b> chevron-right</span><br />
+													<span><b>Font size:</b> 16pt</span><br />
+													<span><b>Font weight:</b> bold</span><br />
+													<span>Small buttons will be used if needed</span>
+												</div>
+												<a onclick="myFunction('use-case-header')">
+													<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+													<p>Use cases</p>
+												</a>
+												<div class="use-cases" id="use-case-header" style="display: none">
+													<ul>
+														<li>To group related information inside a page and differentiate it from another.</li>
+													</ul>
+												</div>
+												<a onclick="myFunction('in-use-header')">
+													<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+													<p>In use (example)</p>
+												</a>
+												<div id="in-use-header" style="display: none; padding: 20px">
+													<img src="imgs/header.png" />
+												</div>
+												<a onclick="myFunction('code-header')">
+													<i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>
+													<p>Code</p>
+												</a>
+												<div class="code-box" id="code-header" style="display: none">
 													<span>[Code]</span>
 												</div>
 										</div>

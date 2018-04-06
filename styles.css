@@ -1268,6 +1268,40 @@ input:focus, input[type=text]:focus, input[type=time]:focus, input[type=date]:fo
 	color: #CC3300;
 }
 
+.header{
+	border-radius: 4px;
+	height: 32px;
+	width: 700px;
+	padding: 0px 12px;
+	background-color: #E9F4FB;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header h3{
+	font-weight: bold;
+	font-size: 16px;
+	color: #373737;
+	margin-bottom: 0px;
+}
+
+.header span{
+	margin: 0px;
+}
+
+.header i{
+	color: #373737;
+	padding-right: 8px;
+}
+
+.header div{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
 .card-container{
 	background-color: #ffffff;
 	border: 1px solid #CCCDD1;
