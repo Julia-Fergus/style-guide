@@ -1270,7 +1270,6 @@ input:focus, input[type=text]:focus, input[type=time]:focus, input[type=date]:fo
 
 .header{
 	border-radius: 4px;
-	height: 32px;
 	width: 700px;
 	padding: 0px 12px;
 	background-color: #E9F4FB;
@@ -1294,6 +1293,14 @@ input:focus, input[type=text]:focus, input[type=time]:focus, input[type=date]:fo
 .header i{
 	color: #373737;
 	padding-right: 8px;
+}
+
+.bigHeader{
+	height: 46px;
+}
+
+.smallHeader{
+	height: 32px;
 }
 
 .header div{
