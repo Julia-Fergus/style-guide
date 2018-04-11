@@ -1102,10 +1102,11 @@ input:focus, input[type=text]:focus, input[type=time]:focus, input[type=date]:fo
 }
 
 .badges{
-	border-radius: 50px;
+	border-radius: 4px;
 	color: #ffffff;
 	font-size: 12px;
-	padding: 3px 10px;
+	font-weight: bold;
+	padding: 3px 8px;
 	margin: 8px;
 }
 
